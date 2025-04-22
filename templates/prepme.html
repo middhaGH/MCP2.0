@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrepMe Chatbot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- remove this line once you see it! -->
+      <div class="container mt-5">
+        <h1 class="text-center">PrepMe Chatbot</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Job: {{ job.company }} - {{ job.position }}</h5>
+                <p class="card-text">Job Description: {{ job.job_description }}</p>
+                <p class="card-text">Resume: {{ initial_context.split('Resume:\n')[1] }}</p>
+            </div>
+        </div>
+
+        <div class="chat-container mt-4">
+            <div id="chat-box" class="border p-3" style="height: 300px; overflow-y: scroll;">
+                <div>Bot: {{ initial_response }}</div>
+            </div>
+            <div class="input-group mt-3">
+                <input type="text" id="user-input" class="form-control" placeholder="Type your message here...">
+                <button id="send-btn" class="btn btn-primary">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const chatBox   = document.getElementById('chat-box');
+          const userInput = document.getElementById('user-input');
+          const sendBtn   = document.getElementById('send-btn');
+  
+          console.log('PrepMe chat loaded:', { chatBox, userInput, sendBtn });
+  
+          sendBtn.addEventListener('click', async () => {
+            const userMessage = userInput.value.trim();
+            console.log('Send clicked, message=', userMessage);
+            if (!userMessage) return;
+  
+            // Show the user’s message
+            const uDiv = document.createElement('div');
+            uDiv.textContent = `You: ${userMessage}`;
+            chatBox.appendChild(uDiv);
+            userInput.value = '';
+  
+            try {
+              const res = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: userMessage }),
+              });
+              console.log('fetch() resolved:', res);
+  
+              if (!res.ok) {
+                const errText = await res.text();
+                throw new Error(`HTTP ${res.status}: ${errText}`);
+              }
+  
+              const { response } = await res.json();
+              console.log('API response JSON:', response);
+  
+              const bDiv = document.createElement('div');
+              bDiv.textContent = `Bot: ${response}`;
+              chatBox.appendChild(bDiv);
+              chatBox.scrollTop = chatBox.scrollHeight;
+  
+            } catch (err) {
+              console.error('Chat error:', err);
+              const errDiv = document.createElement('div');
+              errDiv.textContent = `Error: ${err.message}`;
+              chatBox.appendChild(errDiv);
+            }
+          });
+        });
+      </script>
+  
+</body>
+</html>

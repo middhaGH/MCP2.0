@@ -6,6 +6,19 @@ import pandas as pd
 from werkzeug.utils import secure_filename
 import openpyxl
 from sqlalchemy.exc import SQLAlchemyError
+import openai, sys  # Import OpenAI library
+from dotenv import load_dotenv
+from flask_migrate import Migrate
+from openai import OpenAI
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
+
+
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Set your OpenAI API key from the .env file
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='app.log', filemode='a')
@@ -21,6 +34,9 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 db = SQLAlchemy(app)
 
+# Initialize Flask-Migrate
+migrate = Migrate(app, db)
+
 class Job(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     company = db.Column(db.String(100), nullable=False)
@@ -31,6 +47,7 @@ class Job(db.Model):
     interview_details = db.Column(db.Text)
     comments = db.Column(db.Text)
     link = db.Column(db.String(300))
+    job_description = db.Column(db.Text)  # New field for job description
 
     def __repr__(self):
         return f"<Job {self.company} - {self.position}>"
@@ -85,11 +102,56 @@ def edit_job(job_id):
         job.interview_details = request.form.get('interview_details')
         job.comments = request.form.get('comments')
         job.link = request.form.get('link')
+        job.job_description = request.form.get('job_description')  # Update job description
 
         db.session.commit()
+
+        # Call LLM to generate interview plan
+        if job.job_description:
+            interview_plan = generate_interview_plan(job.job_description)
+            flash(f"Interview Plan: {interview_plan}")
+
         return redirect(url_for('jobs'))
 
     return render_template('jobs.html', jobs=Job.query.all(), edit_job=job)
+
+# Function to generate an interview plan using OpenAI's GPT model
+def generate_interview_plan(job_description):
+    import os, sys
+    from openai import OpenAI
+
+    # Sanity check
+    print("Python exe:", sys.executable)
+    import openai as _oa
+    print("OpenAI version:", _oa.__version__)
+    print("OpenAI path:", _oa.__file__)
+
+    # Instantiate the client
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+    try:
+        resp = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": f"Create an interview plan for the following job description. Highlight key skills and requirements:\n{job_description}"},
+            ],
+            max_tokens=150
+        )
+
+        # Extract and return the generated text
+        return resp.choices[0].message.content.strip()
+
+    except Exception as e:
+        # This will catch everything, including rate‑limit/quota errors
+        print(f"Error ({type(e).__name__}): {e}")
+        # Optionally, if it’s a JSON‑style API error you can introspect:
+        try:
+            err = e.error if hasattr(e, "error") else None
+            print("Error details:", err)
+        except:
+            pass
+        return "Error generating interview plan. Please try again later."
 
 @app.route('/delete_job/<int:job_id>', methods=['POST'])
 def delete_job(job_id):
@@ -201,12 +263,70 @@ def validate_columns():
         return f"Missing columns: {missing_columns}, Extra columns: {extra_columns}", 400
 
     return "Column names are aligned.", 200
+@app.route('/api/chat', methods=['POST'])
+def api_chat():
+    data = request.get_json() or {}
+    user_msg = data.get('message', '').strip()
+    if not user_msg:
+        return jsonify(response="Please type something!")  # guard empty
+
+    # You can preload system/context messages here as needed
+    messages = [
+        {"role": "system", "content": "You are a helpful career coach."},
+        {"role": "user",   "content": user_msg}
+    ]
+
+    try:
+        # use your OpenAI client exactly like in prepme()
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        chat = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=messages,
+            max_tokens=150
+        )
+        reply = chat.choices[0].message.content.strip()
+    except Exception as e:
+        reply = f"Error: {str(e)}"
+
+    return jsonify(response=reply)
+
+@app.route('/prepme/<int:job_id>', methods=['GET'])
+def prepme(job_id):
+    job = Job.query.get_or_404(job_id)
+
+    # Load the resume from the uploads directory
+    resume_path = os.path.join(app.config['UPLOAD_FOLDER'], 'resume.docx')
+    resume_content = ""
+    if os.path.exists(resume_path):
+        import docx
+        doc = docx.Document(resume_path)
+        resume_content = "\n".join([paragraph.text for paragraph in doc.paragraphs])
+
+    # Initial context for the chatbot
+    initial_context = f"Job Description:\n{job.job_description}\n\nResume:\n{resume_content}"
+
+    # Generate initial LLM response
+    try:
+        client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        #logging.info(f"Initial context for OpenAI API: {initial_context}")
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": "You are a career coach."},
+                {"role": "user", "content": f"Based on the following context, provide an initial response to help the user prepare for this job:\n{initial_context}"},
+            ],
+            max_tokens=150
+        )
+        initial_response = response.choices[0].message.content.strip()
+    except Exception as e:
+        logging.error(f"Error generating response from OpenAI API: {e}")
+        initial_response = "Error generating response. Please try again later."
+
+    return render_template('prepme.html', job=job, initial_context=initial_context, initial_response=initial_response)
 
 # Helper function to check allowed file extensions
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'csv', 'xlsx'}
 
-if __name__ == '__main__':
-    with app.app_context():
-        db.create_all()
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000, debug=True)
