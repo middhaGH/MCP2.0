@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Applications</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Job Applications</h1>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs" id="jobTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="upload-tab" data-bs-toggle="tab" data-bs-target="#upload" type="button" role="tab" aria-controls="upload" aria-selected="true">Upload Excel</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="list-tab" data-bs-toggle="tab" data-bs-target="#list" type="button" role="tab" aria-controls="list" aria-selected="false">Job List</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="add-tab" data-bs-toggle="tab" data-bs-target="#add" type="button" role="tab" aria-controls="add" aria-selected="false">Add Job</button>
+            </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="jobTabsContent">
+            <!-- Upload Excel Tab -->
+            <div class="tab-pane fade show active" id="upload" role="tabpanel" aria-labelledby="upload-tab">
+                <form method="POST" action="/upload" enctype="multipart/form-data" class="mt-4">
+                    <div class="mb-3">
+                        <label for="excelFile" class="form-label">Upload Excel File</label>
+                        <input type="file" class="form-control" id="excelFile" name="file" accept=".xlsx, .csv" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </form>
+            </div>
+
+            <!-- Job List Tab -->
+            <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
+                <h2 class="mt-4">Job List</h2>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Company</th>
+                            <th>Position</th>
+                            <th>Resume Used</th>
+                            <th>Date Applied</th>
+                            <th>Status</th>
+                            <th>Interview Details</th>
+                            <th>Comments</th>
+                            <th>Link</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for job in jobs %}
+                        <tr>
+                            <td>{{ job.company }}</td>
+                            <td>{{ job.position }}</td>
+                            <td>{{ job.resume_used }}</td>
+                            <td>{{ job.date_applied }}</td>
+                            <td>{{ job.status }}</td>
+                            <td>{{ job.interview_details }}</td>
+                            <td>{{ job.comments }}</td>
+                            <td><a href="{{ job.link }}" target="_blank">Link</a></td>
+                            <td>
+                                <form method="POST" action="/delete_job/{{ job.id }}" style="display:inline;">
+                                    <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                                </form>
+                                <a href="/edit_job/{{ job.id }}" class="btn btn-sm btn-warning">Edit</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Add Job Tab -->
+            <div class="tab-pane fade" id="add" role="tabpanel" aria-labelledby="add-tab">
+                <form method="POST" action="{% if edit_job %}/edit_job/{{ edit_job.id }}{% else %}/jobs{% endif %}" class="mt-4">
+                    <div class="mb-3">
+                        <label for="company" class="form-label">Company</label>
+                        <input type="text" class="form-control" id="company" name="company" value="{{ edit_job.company if edit_job else '' }}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="position" class="form-label">Position</label>
+                        <input type="text" class="form-control" id="position" name="position" value="{{ edit_job.position if edit_job else '' }}" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="resume_used" class="form-label">Resume Used</label>
+                        <input type="text" class="form-control" id="resume_used" name="resume_used" value="{{ edit_job.resume_used if edit_job else '' }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="date_applied" class="form-label">Date Applied</label>
+                        <input type="date" class="form-control" id="date_applied" name="date_applied" value="{{ edit_job.date_applied if edit_job else '' }}">
+                    </div>
+                    <div class="mb-3">
+                        <label for="status" class="form-label">Status</label>
+                        <select class="form-control" id="status" name="status">
+                            <option value="Applied" {% if edit_job and edit_job.status == 'Applied' %}selected{% endif %}>Applied</option>
+                            <option value="Interviewing" {% if edit_job and edit_job.status == 'Interviewing' %}selected{% endif %}>Interviewing</option>
+                            <option value="Rejected" {% if edit_job and edit_job.status == 'Rejected' %}selected{% endif %}>Rejected</option>
+                            <option value="On Hold" {% if edit_job and edit_job.status == 'On Hold' %}selected{% endif %}>On Hold</option>
+                            <option value="Offer" {% if edit_job and edit_job.status == 'Offer' %}selected{% endif %}>Offer</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="interview_details" class="form-label">Interview Details</label>
+                        <textarea class="form-control" id="interview_details" name="interview_details">{{ edit_job.interview_details if edit_job else '' }}</textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comments" class="form-label">Comments</label>
+                        <textarea class="form-control" id="comments" name="comments">{{ edit_job.comments if edit_job else '' }}</textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="link" class="form-label">Link</label>
+                        <input type="url" class="form-control" id="link" name="link" value="{{ edit_job.link if edit_job else '' }}">
+                    </div>
+                    <button type="submit" class="btn btn-primary">{% if edit_job %}Update Job{% else %}Add Job{% endif %}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Automatically switch to the Add Job tab if editing a job
+        document.addEventListener('DOMContentLoaded', function () {
+            {% if edit_job %}
+            var addTab = document.getElementById('add-tab');
+            var addContent = document.getElementById('add');
+
+            // Activate the Add Job tab
+            addTab.classList.add('active');
+            addTab.setAttribute('aria-selected', 'true');
+            addContent.classList.add('show', 'active');
+
+            // Deactivate other tabs
+            var uploadTab = document.getElementById('upload-tab');
+            var uploadContent = document.getElementById('upload');
+            var listTab = document.getElementById('list-tab');
+            var listContent = document.getElementById('list');
+
+            uploadTab.classList.remove('active');
+            uploadTab.setAttribute('aria-selected', 'false');
+            uploadContent.classList.remove('show', 'active');
+
+            listTab.classList.remove('active');
+            listTab.setAttribute('aria-selected', 'false');
+            listContent.classList.remove('show', 'active');
+            {% endif %}
+        });
+    </script>
+</body>
+</html>

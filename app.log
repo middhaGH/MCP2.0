@@ -1,0 +1,432 @@
+2025-04-22 08:04:51,206 - INFO - Starting Flask application
+2025-04-22 08:04:51,221 - WARNING -  * Debugger is active!
+2025-04-22 08:04:51,228 - INFO -  * Debugger PIN: 745-208-935
+2025-04-22 08:05:02,970 - INFO - Fetching all jobs from the database
+2025-04-22 08:05:02,974 - DEBUG - Retrieved jobs: []
+2025-04-22 08:05:02,989 - INFO - 127.0.0.1 - - [22/Apr/2025 08:05:02] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:05:03,522 - INFO - 127.0.0.1 - - [22/Apr/2025 08:05:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 08:05:08,436 - INFO - Received file upload request
+2025-04-22 08:05:08,439 - INFO - File saved to uploads\JobApplications.xlsx
+2025-04-22 08:05:08,478 - INFO - Validating column headers
+2025-04-22 08:05:08,478 - WARNING - Missing required columns: {'position', 'resume used', 'company'}
+2025-04-22 08:05:08,481 - INFO - 127.0.0.1 - - [22/Apr/2025 08:05:08] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-22 08:05:08,487 - INFO - Fetching all jobs from the database
+2025-04-22 08:05:08,487 - DEBUG - Retrieved jobs: []
+2025-04-22 08:05:08,488 - INFO - 127.0.0.1 - - [22/Apr/2025 08:05:08] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:05:32,243 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\sqlalchemy\\schema.py', reloading
+2025-04-22 08:05:32,246 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\sqlalchemy\\sql\\__init__.py', reloading
+2025-04-22 08:05:32,268 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\sqlalchemy\\sql\\schema.py', reloading
+2025-04-22 08:05:32,279 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\flask_sqlalchemy\\query.py', reloading
+2025-04-22 08:05:32,292 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\flask_sqlalchemy\\model.py', reloading
+2025-04-22 08:05:33,845 - INFO - Starting Flask application
+2025-04-22 08:05:33,859 - WARNING -  * Debugger is active!
+2025-04-22 08:05:33,866 - INFO -  * Debugger PIN: 745-208-935
+2025-04-22 08:06:35,748 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Scripts\\pip-script.py', reloading
+2025-04-22 08:06:37,540 - INFO - Starting Flask application
+2025-04-22 08:06:37,554 - WARNING -  * Debugger is active!
+2025-04-22 08:06:37,560 - INFO -  * Debugger PIN: 745-208-935
+2025-04-22 08:10:55,454 - INFO -  * Detected change in 'b:\\Coding\\MCP\\MCP2.0\\app.py', reloading
+2025-04-22 08:10:55,456 - INFO -  * Detected change in 'b:\\Coding\\MCP\\MCP2.0\\app.py', reloading
+2025-04-22 08:10:55,457 - INFO -  * Detected change in 'b:\\Coding\\MCP\\MCP2.0\\app.py', reloading
+2025-04-22 08:10:57,500 - INFO - Starting Flask application
+2025-04-22 08:10:57,515 - WARNING -  * Debugger is active!
+2025-04-22 08:10:57,520 - INFO -  * Debugger PIN: 745-208-935
+2025-04-22 08:11:07,845 - INFO - Fetching all jobs from the database
+2025-04-22 08:11:07,850 - DEBUG - Retrieved jobs: []
+2025-04-22 08:11:07,869 - INFO - 127.0.0.1 - - [22/Apr/2025 08:11:07] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:11:08,381 - INFO - 127.0.0.1 - - [22/Apr/2025 08:11:08] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 08:11:13,692 - INFO - Received file upload request
+2025-04-22 08:11:13,694 - INFO - File saved to uploads\JobApplications.xlsx
+2025-04-22 08:11:13,735 - INFO - Validating column headers
+2025-04-22 08:11:13,735 - WARNING - Missing required columns: {'resume used', 'position', 'company'}
+2025-04-22 08:11:13,736 - INFO - 127.0.0.1 - - [22/Apr/2025 08:11:13] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-22 08:11:13,740 - INFO - Fetching all jobs from the database
+2025-04-22 08:11:13,741 - DEBUG - Retrieved jobs: []
+2025-04-22 08:11:13,741 - INFO - 127.0.0.1 - - [22/Apr/2025 08:11:13] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:11:33,173 - INFO - Starting Flask application
+2025-04-22 08:11:33,201 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 08:11:33,201 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 08:11:33,210 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 08:11:34,597 - INFO - Starting Flask application
+2025-04-22 08:11:34,611 - WARNING -  * Debugger is active!
+2025-04-22 08:11:34,625 - INFO -  * Debugger PIN: 745-208-935
+2025-04-22 08:11:55,030 - INFO - Fetching all jobs from the database
+2025-04-22 08:11:55,031 - DEBUG - Retrieved jobs: []
+2025-04-22 08:11:55,031 - INFO - 127.0.0.1 - - [22/Apr/2025 08:11:55] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:11:55,669 - INFO - 127.0.0.1 - - [22/Apr/2025 08:11:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 08:12:02,359 - INFO - Received file upload request
+2025-04-22 08:12:02,361 - INFO - File saved to uploads\JobApplications.xlsx
+2025-04-22 08:12:02,395 - INFO - Validating column headers
+2025-04-22 08:12:02,396 - WARNING - Missing required columns: {'resume used', 'position', 'company'}
+2025-04-22 08:12:02,397 - INFO - 127.0.0.1 - - [22/Apr/2025 08:12:02] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-22 08:12:02,403 - INFO - Fetching all jobs from the database
+2025-04-22 08:12:02,404 - DEBUG - Retrieved jobs: []
+2025-04-22 08:12:02,405 - INFO - 127.0.0.1 - - [22/Apr/2025 08:12:02] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:14:10,585 - INFO - Fetching all jobs from the database
+2025-04-22 08:14:10,586 - DEBUG - Retrieved jobs: []
+2025-04-22 08:14:10,587 - INFO - 127.0.0.1 - - [22/Apr/2025 08:14:10] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:14:10,883 - INFO - 127.0.0.1 - - [22/Apr/2025 08:14:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 08:14:16,161 - INFO - Received file upload request
+2025-04-22 08:14:16,163 - INFO - File saved to uploads\JobApplications.xlsx
+2025-04-22 08:14:16,197 - INFO - Validating column headers
+2025-04-22 08:14:16,197 - INFO - Normalizing column names and processing rows
+2025-04-22 08:14:16,200 - INFO - Added job from file: <Job EY - AI & Machine Learning Engineer - TMT - Manager - Consulting - Location OPEN (1581453)>
+2025-04-22 08:14:16,200 - INFO - Added job from file: <Job Cync - Director of Generative Artificial Intelligence & ML Innovation – Lending Transformation>
+2025-04-22 08:14:16,201 - INFO - Added job from file: <Job Splunk/Cisco - Engineering Manager, AI role at Splunk>
+2025-04-22 08:14:16,201 - INFO - Added job from file: <Job CapitalOne -  R212977 Posted 04/04/2025
+Director, Technical Program Management - Generative AI>
+2025-04-22 08:14:16,201 - INFO - Added job from file: <Job Telos - AI/ML Engineering Manager opening.>
+2025-04-22 08:14:16,201 - INFO - Added job from file: <Job Claritev - Director - AI (remote).>
+2025-04-22 08:14:16,201 - INFO - Added job from file: <Job DirectDataNetworks - Director of End-to-End AI Applications>
+2025-04-22 08:14:16,202 - INFO - Added job from file: <Job UPMC - 6728201359 - Director, AI Programs>
+2025-04-22 08:14:16,202 - INFO - Added job from file: <Job CrossCountry Consulting - Associate Director – AI Strategy>
+2025-04-22 08:14:16,202 - INFO - Added job from file: <Job Toptal - General Manager, AI>
+2025-04-22 08:14:16,202 - INFO - Added job from file: <Job C3AI - AI Engagement Manager / Director - Federal>
+2025-04-22 08:14:16,202 - INFO - Added job from file: <Job C2ai - AI Solution Manager (Federal) role at C3 AI>
+2025-04-22 08:14:16,202 - INFO - Added job from file: <Job ProtagoLabs Inc. - Product Manager - AI>
+2025-04-22 08:14:16,202 - INFO - Added job from file: <Job Accuenture - Techology Architecture -Resposible AI>
+2025-04-22 08:14:16,202 - INFO - Added job from file: <Job SitusAMC - AI Cloud Operations Lead - Remote>
+2025-04-22 08:14:16,203 - INFO - Added job from file: <Job Zscaler - People Technology - AI Transformation Lead>
+2025-04-22 08:14:16,203 - INFO - Added job from file: <Job Health Intelligence company LLC - Principal, GEN AI Strategy>
+2025-04-22 08:14:16,203 - INFO - Added job from file: <Job Logistics Management Institute - AI Engineer>
+2025-04-22 08:14:16,203 - INFO - Added job from file: <Job PWC - AI Solutions Engineering Delivery Lead>
+2025-04-22 08:14:16,203 - INFO - Added job from file: <Job A.Team - AI Strategy Lead>
+2025-04-22 08:14:16,203 - INFO - Added job from file: <Job Geico - Senior Product Manager, Conversational Chatbot>
+2025-04-22 08:14:16,203 - INFO - Added job from file: <Job Oracle - Principal Technical Program Manager>
+2025-04-22 08:14:16,204 - INFO - Added job from file: <Job Oracle  - Senior Director Product Management/Strategy (OCI)>
+2025-04-22 08:14:16,204 - INFO - Added job from file: <Job Datawatch Systems, Inc -  - Senior Manager of Technical Services >
+2025-04-22 08:14:16,204 - INFO - Added job from file: <Job Transformational Security, LLC - Program Manager>
+2025-04-22 08:14:16,204 - INFO - Added job from file: <Job Amazon - Principal, Technical Program Manager, SecOps Risk job ID 2934651>
+2025-04-22 08:14:16,204 - INFO - Added job from file: <Job Amazon - Technical Program Manager, Availability Product Team - APT>
+2025-04-22 08:14:16,204 - INFO - Added job from file: <Job Amazon - Principal PM-T GenAI Products, PXT Central Science>
+2025-04-22 08:14:16,205 - INFO - Added job from file: <Job Amazon - Technical Program Manager - GenAI, Amazon Bedrock GTM>
+2025-04-22 08:14:16,205 - INFO - Added job from file: <Job BoozAllen - Generative AI Program Manager>
+2025-04-22 08:14:16,205 - INFO - Added job from file: <Job AstraZeneca - Director, AI & Machine Learning :  R-223898>
+2025-04-22 08:14:16,205 - INFO - Added job from file: <Job NTTDATA - Gen AI Technical Consulting Director (Healthcare) - US Remote>
+2025-04-22 08:14:16,205 - INFO - Added job from file: <Job AgileDefence - VP of AI Solutions>
+2025-04-22 08:14:16,205 - INFO - Added job from file: <Job RSP Group - Chief Technology Officer>
+2025-04-22 08:14:16,205 - INFO - Added job from file: <Job TradingWhale - Founding CTO - AI/ML platform>
+2025-04-22 08:14:16,206 - INFO - Added job from file: <Job  American Alliance of Museums - Director, Technology & Digital Strategy>
+2025-04-22 08:14:16,206 - INFO - Added job from file: <Job Apple - 	Sales - Applied Commerce & Gen AI Engineering Program Manager>
+2025-04-22 08:14:16,206 - INFO - Added job from file: <Job Google - Technical Program Manager II, Risk and Compliance, CISO ->
+2025-04-22 08:14:16,206 - INFO - Added job from file: <Job Deliotte - Sr. Mgr, GenAI Lead Engineer, Application Development>
+2025-04-22 08:14:16,206 - INFO - Added job from file: <Job Deliotte -  Finance & Performance Finance GenAI Manager | Techno~Functional>
+2025-04-22 08:14:16,206 - INFO - Added job from file: <Job NetFlix -  	
+Technical Program Manager - Support >
+2025-04-22 08:14:16,207 - INFO - Added job from file: <Job Accunture - AI / Large Language Model Architect>
+2025-04-22 08:14:16,207 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA (Job ID: 2935611) >
+2025-04-22 08:14:16,207 - INFO - Added job from file: <Job correlation One - Lead Instructor: GenAI>
+2025-04-22 08:14:16,207 - INFO - Added job from file: <Job Master Card - Lead Technical Program Manager - R&D-R-246452 >
+2025-04-22 08:14:16,207 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA, FSI (Job ID: 2948881)>
+2025-04-22 08:14:16,207 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI, AWS Cloud Intelligence (Job ID: 2897558) >
+2025-04-22 08:14:16,207 - INFO - Added job from file: <Job Amazon - Senior Delivery Consultant- GenAI/ML, AWS, Industries (Job ID: 2925883)>
+2025-04-22 08:14:16,207 - INFO - Added job from file: <Job Amazon - Private Equity GenAI/ML Specialist (Job ID: 2953372)>
+2025-04-22 08:14:16,208 - INFO - Added job from file: <Job EY - Government and Public Sector - GenAI Developer Manager>
+2025-04-22 08:14:16,208 - INFO - Added job from file: <Job Verizon - AI Program Manager>
+2025-04-22 08:14:16,208 - INFO - Added job from file: <Job Wells Fargo - Generative AI Engineer  R-449047>
+2025-04-22 08:14:16,208 - INFO - Added job from file: <Job Avalara - Director, Technical Program Management>
+2025-04-22 08:14:16,208 - INFO - Added job from file: <Job FieldGuide - Principal Program Manager>
+2025-04-22 08:14:16,208 - INFO - Added job from file: <Job Capital One - Senior Manager, Technical Program Management:R2121781>
+2025-04-22 08:14:16,208 - INFO - Added job from file: <Job Capital One - Senior Manager, Technical Program Management:R211200>
+2025-04-22 08:14:16,209 - INFO - Added job from file: <Job Amgen - Associate Director, AI&D Engagement and Go-to-Market (GTM) Lead>
+2025-04-22 08:14:16,209 - INFO - Added job from file: <Job FTI Consulting’s Digital Transformation Practice -  Senior Solutions Architect – AI and ML Operations Engineering >
+2025-04-22 08:14:16,209 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:14:16,209 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:14:16,209 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:14:16,209 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:14:16,210 - INFO - Added job from file: <Job nan - : Company, Position, Resume Used, Date Applied, Status, Interview Details, Comments, and Link.>
+2025-04-22 08:14:16,218 - ERROR - Error processing file: (sqlite3.IntegrityError) NOT NULL constraint failed: job.company
+[SQL: INSERT INTO job (company, position, resume_used, date_applied, status, interview_details, comments, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING id]
+[parameters: (nan, nan, nan, nan, nan, nan, nan, nan)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-22 08:14:16,219 - INFO - 127.0.0.1 - - [22/Apr/2025 08:14:16] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-22 08:14:16,225 - INFO - Fetching all jobs from the database
+2025-04-22 08:14:16,225 - DEBUG - Retrieved jobs: []
+2025-04-22 08:14:16,226 - INFO - 127.0.0.1 - - [22/Apr/2025 08:14:16] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:14:56,364 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\sqlalchemy\\event\\__init__.py', reloading
+2025-04-22 08:14:56,364 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\sqlalchemy\\event\\__init__.py', reloading
+2025-04-22 08:14:56,380 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\sqlalchemy\\orm\\__init__.py', reloading
+2025-04-22 08:14:56,380 - INFO -  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\sqlalchemy\\orm\\__init__.py', reloading
+2025-04-22 08:14:57,129 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 08:14:58,502 - INFO - Starting Flask application
+2025-04-22 08:14:58,516 - WARNING -  * Debugger is active!
+2025-04-22 08:14:58,522 - INFO -  * Debugger PIN: 745-208-935
+2025-04-22 08:14:58,557 - INFO - Starting Flask application
+2025-04-22 08:14:58,572 - WARNING -  * Debugger is active!
+2025-04-22 08:14:58,586 - INFO -  * Debugger PIN: 745-208-935
+2025-04-22 08:16:22,993 - INFO - Fetching all jobs from the database
+2025-04-22 08:16:23,000 - DEBUG - Retrieved jobs: []
+2025-04-22 08:16:23,022 - INFO - 127.0.0.1 - - [22/Apr/2025 08:16:23] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:16:23,528 - INFO - 127.0.0.1 - - [22/Apr/2025 08:16:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 08:16:28,362 - INFO - Received file upload request
+2025-04-22 08:16:28,365 - INFO - File saved to uploads\JobApplications.xlsx
+2025-04-22 08:16:28,404 - INFO - Validating column headers
+2025-04-22 08:16:28,404 - INFO - Normalizing column names and processing rows
+2025-04-22 08:16:28,406 - INFO - Added job from file: <Job EY - AI & Machine Learning Engineer - TMT - Manager - Consulting - Location OPEN (1581453)>
+2025-04-22 08:16:28,406 - INFO - Added job from file: <Job Cync - Director of Generative Artificial Intelligence & ML Innovation – Lending Transformation>
+2025-04-22 08:16:28,406 - INFO - Added job from file: <Job Splunk/Cisco - Engineering Manager, AI role at Splunk>
+2025-04-22 08:16:28,406 - INFO - Added job from file: <Job CapitalOne -  R212977 Posted 04/04/2025
+Director, Technical Program Management - Generative AI>
+2025-04-22 08:16:28,406 - INFO - Added job from file: <Job Telos - AI/ML Engineering Manager opening.>
+2025-04-22 08:16:28,406 - INFO - Added job from file: <Job Claritev - Director - AI (remote).>
+2025-04-22 08:16:28,407 - INFO - Added job from file: <Job DirectDataNetworks - Director of End-to-End AI Applications>
+2025-04-22 08:16:28,407 - INFO - Added job from file: <Job UPMC - 6728201359 - Director, AI Programs>
+2025-04-22 08:16:28,407 - INFO - Added job from file: <Job CrossCountry Consulting - Associate Director – AI Strategy>
+2025-04-22 08:16:28,407 - INFO - Added job from file: <Job Toptal - General Manager, AI>
+2025-04-22 08:16:28,407 - INFO - Added job from file: <Job C3AI - AI Engagement Manager / Director - Federal>
+2025-04-22 08:16:28,407 - INFO - Added job from file: <Job C2ai - AI Solution Manager (Federal) role at C3 AI>
+2025-04-22 08:16:28,407 - INFO - Added job from file: <Job ProtagoLabs Inc. - Product Manager - AI>
+2025-04-22 08:16:28,407 - INFO - Added job from file: <Job Accuenture - Techology Architecture -Resposible AI>
+2025-04-22 08:16:28,408 - INFO - Added job from file: <Job SitusAMC - AI Cloud Operations Lead - Remote>
+2025-04-22 08:16:28,408 - INFO - Added job from file: <Job Zscaler - People Technology - AI Transformation Lead>
+2025-04-22 08:16:28,408 - INFO - Added job from file: <Job Health Intelligence company LLC - Principal, GEN AI Strategy>
+2025-04-22 08:16:28,408 - INFO - Added job from file: <Job Logistics Management Institute - AI Engineer>
+2025-04-22 08:16:28,408 - INFO - Added job from file: <Job PWC - AI Solutions Engineering Delivery Lead>
+2025-04-22 08:16:28,409 - INFO - Added job from file: <Job A.Team - AI Strategy Lead>
+2025-04-22 08:16:28,409 - INFO - Added job from file: <Job Geico - Senior Product Manager, Conversational Chatbot>
+2025-04-22 08:16:28,409 - INFO - Added job from file: <Job Oracle - Principal Technical Program Manager>
+2025-04-22 08:16:28,409 - INFO - Added job from file: <Job Oracle  - Senior Director Product Management/Strategy (OCI)>
+2025-04-22 08:16:28,409 - INFO - Added job from file: <Job Datawatch Systems, Inc -  - Senior Manager of Technical Services >
+2025-04-22 08:16:28,410 - INFO - Added job from file: <Job Transformational Security, LLC - Program Manager>
+2025-04-22 08:16:28,410 - INFO - Added job from file: <Job Amazon - Principal, Technical Program Manager, SecOps Risk job ID 2934651>
+2025-04-22 08:16:28,410 - INFO - Added job from file: <Job Amazon - Technical Program Manager, Availability Product Team - APT>
+2025-04-22 08:16:28,410 - INFO - Added job from file: <Job Amazon - Principal PM-T GenAI Products, PXT Central Science>
+2025-04-22 08:16:28,410 - INFO - Added job from file: <Job Amazon - Technical Program Manager - GenAI, Amazon Bedrock GTM>
+2025-04-22 08:16:28,410 - INFO - Added job from file: <Job BoozAllen - Generative AI Program Manager>
+2025-04-22 08:16:28,410 - INFO - Added job from file: <Job AstraZeneca - Director, AI & Machine Learning :  R-223898>
+2025-04-22 08:16:28,411 - INFO - Added job from file: <Job NTTDATA - Gen AI Technical Consulting Director (Healthcare) - US Remote>
+2025-04-22 08:16:28,411 - INFO - Added job from file: <Job AgileDefence - VP of AI Solutions>
+2025-04-22 08:16:28,411 - INFO - Added job from file: <Job RSP Group - Chief Technology Officer>
+2025-04-22 08:16:28,411 - INFO - Added job from file: <Job TradingWhale - Founding CTO - AI/ML platform>
+2025-04-22 08:16:28,411 - INFO - Added job from file: <Job  American Alliance of Museums - Director, Technology & Digital Strategy>
+2025-04-22 08:16:28,411 - INFO - Added job from file: <Job Apple - 	Sales - Applied Commerce & Gen AI Engineering Program Manager>
+2025-04-22 08:16:28,411 - INFO - Added job from file: <Job Google - Technical Program Manager II, Risk and Compliance, CISO ->
+2025-04-22 08:16:28,412 - INFO - Added job from file: <Job Deliotte - Sr. Mgr, GenAI Lead Engineer, Application Development>
+2025-04-22 08:16:28,412 - INFO - Added job from file: <Job Deliotte -  Finance & Performance Finance GenAI Manager | Techno~Functional>
+2025-04-22 08:16:28,412 - INFO - Added job from file: <Job NetFlix -  	
+Technical Program Manager - Support >
+2025-04-22 08:16:28,412 - INFO - Added job from file: <Job Accunture - AI / Large Language Model Architect>
+2025-04-22 08:16:28,412 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA (Job ID: 2935611) >
+2025-04-22 08:16:28,412 - INFO - Added job from file: <Job correlation One - Lead Instructor: GenAI>
+2025-04-22 08:16:28,412 - INFO - Added job from file: <Job Master Card - Lead Technical Program Manager - R&D-R-246452 >
+2025-04-22 08:16:28,413 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA, FSI (Job ID: 2948881)>
+2025-04-22 08:16:28,413 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI, AWS Cloud Intelligence (Job ID: 2897558) >
+2025-04-22 08:16:28,413 - INFO - Added job from file: <Job Amazon - Senior Delivery Consultant- GenAI/ML, AWS, Industries (Job ID: 2925883)>
+2025-04-22 08:16:28,413 - INFO - Added job from file: <Job Amazon - Private Equity GenAI/ML Specialist (Job ID: 2953372)>
+2025-04-22 08:16:28,413 - INFO - Added job from file: <Job EY - Government and Public Sector - GenAI Developer Manager>
+2025-04-22 08:16:28,413 - INFO - Added job from file: <Job Verizon - AI Program Manager>
+2025-04-22 08:16:28,413 - INFO - Added job from file: <Job Wells Fargo - Generative AI Engineer  R-449047>
+2025-04-22 08:16:28,414 - INFO - Added job from file: <Job Avalara - Director, Technical Program Management>
+2025-04-22 08:16:28,414 - INFO - Added job from file: <Job FieldGuide - Principal Program Manager>
+2025-04-22 08:16:28,414 - INFO - Added job from file: <Job Capital One - Senior Manager, Technical Program Management:R2121781>
+2025-04-22 08:16:28,414 - INFO - Added job from file: <Job Capital One - Senior Manager, Technical Program Management:R211200>
+2025-04-22 08:16:28,414 - INFO - Added job from file: <Job Amgen - Associate Director, AI&D Engagement and Go-to-Market (GTM) Lead>
+2025-04-22 08:16:28,414 - INFO - Added job from file: <Job FTI Consulting’s Digital Transformation Practice -  Senior Solutions Architect – AI and ML Operations Engineering >
+2025-04-22 08:16:28,415 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:16:28,415 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:16:28,415 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:16:28,415 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:16:28,415 - INFO - Added job from file: <Job nan - : Company, Position, Resume Used, Date Applied, Status, Interview Details, Comments, and Link.>
+2025-04-22 08:16:28,422 - ERROR - Error processing file: (sqlite3.IntegrityError) NOT NULL constraint failed: job.company
+[SQL: INSERT INTO job (company, position, resume_used, date_applied, status, interview_details, comments, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING id]
+[parameters: (nan, nan, nan, nan, nan, nan, nan, nan)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-22 08:16:28,424 - INFO - 127.0.0.1 - - [22/Apr/2025 08:16:28] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-22 08:16:28,429 - INFO - Fetching all jobs from the database
+2025-04-22 08:16:28,430 - DEBUG - Retrieved jobs: []
+2025-04-22 08:16:28,431 - INFO - 127.0.0.1 - - [22/Apr/2025 08:16:28] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:18:14,204 - INFO - Fetching all jobs from the database
+2025-04-22 08:18:14,205 - DEBUG - Retrieved jobs: []
+2025-04-22 08:18:14,206 - INFO - 127.0.0.1 - - [22/Apr/2025 08:18:14] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:18:14,787 - INFO - 127.0.0.1 - - [22/Apr/2025 08:18:14] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 08:18:22,264 - INFO - Received file upload request
+2025-04-22 08:18:22,266 - INFO - File saved to uploads\JobApplications.xlsx
+2025-04-22 08:18:22,304 - INFO - Validating column headers
+2025-04-22 08:18:22,304 - INFO - Normalizing column names and processing rows
+2025-04-22 08:18:22,305 - INFO - Added job from file: <Job EY - AI & Machine Learning Engineer - TMT - Manager - Consulting - Location OPEN (1581453)>
+2025-04-22 08:18:22,305 - INFO - Added job from file: <Job Cync - Director of Generative Artificial Intelligence & ML Innovation – Lending Transformation>
+2025-04-22 08:18:22,305 - INFO - Added job from file: <Job Splunk/Cisco - Engineering Manager, AI role at Splunk>
+2025-04-22 08:18:22,306 - INFO - Added job from file: <Job CapitalOne -  R212977 Posted 04/04/2025
+Director, Technical Program Management - Generative AI>
+2025-04-22 08:18:22,306 - INFO - Added job from file: <Job Telos - AI/ML Engineering Manager opening.>
+2025-04-22 08:18:22,306 - INFO - Added job from file: <Job Claritev - Director - AI (remote).>
+2025-04-22 08:18:22,306 - INFO - Added job from file: <Job DirectDataNetworks - Director of End-to-End AI Applications>
+2025-04-22 08:18:22,306 - INFO - Added job from file: <Job UPMC - 6728201359 - Director, AI Programs>
+2025-04-22 08:18:22,306 - INFO - Added job from file: <Job CrossCountry Consulting - Associate Director – AI Strategy>
+2025-04-22 08:18:22,306 - INFO - Added job from file: <Job Toptal - General Manager, AI>
+2025-04-22 08:18:22,306 - INFO - Added job from file: <Job C3AI - AI Engagement Manager / Director - Federal>
+2025-04-22 08:18:22,307 - INFO - Added job from file: <Job C2ai - AI Solution Manager (Federal) role at C3 AI>
+2025-04-22 08:18:22,307 - INFO - Added job from file: <Job ProtagoLabs Inc. - Product Manager - AI>
+2025-04-22 08:18:22,307 - INFO - Added job from file: <Job Accuenture - Techology Architecture -Resposible AI>
+2025-04-22 08:18:22,307 - INFO - Added job from file: <Job SitusAMC - AI Cloud Operations Lead - Remote>
+2025-04-22 08:18:22,307 - INFO - Added job from file: <Job Zscaler - People Technology - AI Transformation Lead>
+2025-04-22 08:18:22,307 - INFO - Added job from file: <Job Health Intelligence company LLC - Principal, GEN AI Strategy>
+2025-04-22 08:18:22,307 - INFO - Added job from file: <Job Logistics Management Institute - AI Engineer>
+2025-04-22 08:18:22,308 - INFO - Added job from file: <Job PWC - AI Solutions Engineering Delivery Lead>
+2025-04-22 08:18:22,308 - INFO - Added job from file: <Job A.Team - AI Strategy Lead>
+2025-04-22 08:18:22,308 - INFO - Added job from file: <Job Geico - Senior Product Manager, Conversational Chatbot>
+2025-04-22 08:18:22,308 - INFO - Added job from file: <Job Oracle - Principal Technical Program Manager>
+2025-04-22 08:18:22,308 - INFO - Added job from file: <Job Oracle  - Senior Director Product Management/Strategy (OCI)>
+2025-04-22 08:18:22,308 - INFO - Added job from file: <Job Datawatch Systems, Inc -  - Senior Manager of Technical Services >
+2025-04-22 08:18:22,308 - INFO - Added job from file: <Job Transformational Security, LLC - Program Manager>
+2025-04-22 08:18:22,309 - INFO - Added job from file: <Job Amazon - Principal, Technical Program Manager, SecOps Risk job ID 2934651>
+2025-04-22 08:18:22,309 - INFO - Added job from file: <Job Amazon - Technical Program Manager, Availability Product Team - APT>
+2025-04-22 08:18:22,309 - INFO - Added job from file: <Job Amazon - Principal PM-T GenAI Products, PXT Central Science>
+2025-04-22 08:18:22,309 - INFO - Added job from file: <Job Amazon - Technical Program Manager - GenAI, Amazon Bedrock GTM>
+2025-04-22 08:18:22,309 - INFO - Added job from file: <Job BoozAllen - Generative AI Program Manager>
+2025-04-22 08:18:22,309 - INFO - Added job from file: <Job AstraZeneca - Director, AI & Machine Learning :  R-223898>
+2025-04-22 08:18:22,309 - INFO - Added job from file: <Job NTTDATA - Gen AI Technical Consulting Director (Healthcare) - US Remote>
+2025-04-22 08:18:22,310 - INFO - Added job from file: <Job AgileDefence - VP of AI Solutions>
+2025-04-22 08:18:22,310 - INFO - Added job from file: <Job RSP Group - Chief Technology Officer>
+2025-04-22 08:18:22,310 - INFO - Added job from file: <Job TradingWhale - Founding CTO - AI/ML platform>
+2025-04-22 08:18:22,310 - INFO - Added job from file: <Job  American Alliance of Museums - Director, Technology & Digital Strategy>
+2025-04-22 08:18:22,310 - INFO - Added job from file: <Job Apple - 	Sales - Applied Commerce & Gen AI Engineering Program Manager>
+2025-04-22 08:18:22,310 - INFO - Added job from file: <Job Google - Technical Program Manager II, Risk and Compliance, CISO ->
+2025-04-22 08:18:22,311 - INFO - Added job from file: <Job Deliotte - Sr. Mgr, GenAI Lead Engineer, Application Development>
+2025-04-22 08:18:22,311 - INFO - Added job from file: <Job Deliotte -  Finance & Performance Finance GenAI Manager | Techno~Functional>
+2025-04-22 08:18:22,311 - INFO - Added job from file: <Job NetFlix -  	
+Technical Program Manager - Support >
+2025-04-22 08:18:22,311 - INFO - Added job from file: <Job Accunture - AI / Large Language Model Architect>
+2025-04-22 08:18:22,311 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA (Job ID: 2935611) >
+2025-04-22 08:18:22,311 - INFO - Added job from file: <Job correlation One - Lead Instructor: GenAI>
+2025-04-22 08:18:22,311 - INFO - Added job from file: <Job Master Card - Lead Technical Program Manager - R&D-R-246452 >
+2025-04-22 08:18:22,311 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA, FSI (Job ID: 2948881)>
+2025-04-22 08:18:22,312 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI, AWS Cloud Intelligence (Job ID: 2897558) >
+2025-04-22 08:18:22,312 - INFO - Added job from file: <Job Amazon - Senior Delivery Consultant- GenAI/ML, AWS, Industries (Job ID: 2925883)>
+2025-04-22 08:18:22,312 - INFO - Added job from file: <Job Amazon - Private Equity GenAI/ML Specialist (Job ID: 2953372)>
+2025-04-22 08:18:22,312 - INFO - Added job from file: <Job EY - Government and Public Sector - GenAI Developer Manager>
+2025-04-22 08:18:22,312 - INFO - Added job from file: <Job Verizon - AI Program Manager>
+2025-04-22 08:18:22,312 - INFO - Added job from file: <Job Wells Fargo - Generative AI Engineer  R-449047>
+2025-04-22 08:18:22,312 - INFO - Added job from file: <Job Avalara - Director, Technical Program Management>
+2025-04-22 08:18:22,313 - INFO - Added job from file: <Job FieldGuide - Principal Program Manager>
+2025-04-22 08:18:22,313 - INFO - Added job from file: <Job Capital One - Senior Manager, Technical Program Management:R2121781>
+2025-04-22 08:18:22,313 - INFO - Added job from file: <Job Capital One - Senior Manager, Technical Program Management:R211200>
+2025-04-22 08:18:22,313 - INFO - Added job from file: <Job Amgen - Associate Director, AI&D Engagement and Go-to-Market (GTM) Lead>
+2025-04-22 08:18:22,313 - INFO - Added job from file: <Job FTI Consulting’s Digital Transformation Practice -  Senior Solutions Architect – AI and ML Operations Engineering >
+2025-04-22 08:18:22,313 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:18:22,314 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:18:22,314 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:18:22,314 - INFO - Added job from file: <Job nan - nan>
+2025-04-22 08:18:22,314 - INFO - Added job from file: <Job nan - : Company, Position, Resume Used, Date Applied, Status, Interview Details, Comments, and Link.>
+2025-04-22 08:18:22,321 - ERROR - Error processing file: (sqlite3.IntegrityError) NOT NULL constraint failed: job.company
+[SQL: INSERT INTO job (company, position, resume_used, date_applied, status, interview_details, comments, link) VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING id]
+[parameters: (nan, nan, nan, nan, nan, nan, nan, nan)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2025-04-22 08:18:22,322 - INFO - 127.0.0.1 - - [22/Apr/2025 08:18:22] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-22 08:18:22,327 - INFO - Fetching all jobs from the database
+2025-04-22 08:18:22,328 - DEBUG - Retrieved jobs: []
+2025-04-22 08:18:22,328 - INFO - 127.0.0.1 - - [22/Apr/2025 08:18:22] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:19:19,383 - INFO - Fetching all jobs from the database
+2025-04-22 08:19:19,384 - DEBUG - Retrieved jobs: []
+2025-04-22 08:19:19,385 - INFO - 127.0.0.1 - - [22/Apr/2025 08:19:19] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:19:19,901 - INFO - 127.0.0.1 - - [22/Apr/2025 08:19:19] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 08:19:35,883 - INFO - Starting Flask application
+2025-04-22 08:19:35,908 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-22 08:19:35,908 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-22 08:19:35,917 - INFO -  * Restarting with watchdog (windowsapi)
+2025-04-22 08:19:37,294 - INFO - Starting Flask application
+2025-04-22 08:19:37,308 - WARNING -  * Debugger is active!
+2025-04-22 08:19:37,324 - INFO -  * Debugger PIN: 745-208-935
+2025-04-22 08:19:39,978 - INFO - Fetching all jobs from the database
+2025-04-22 08:19:39,979 - DEBUG - Retrieved jobs: []
+2025-04-22 08:19:39,979 - INFO - 127.0.0.1 - - [22/Apr/2025 08:19:39] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:19:40,489 - INFO - 127.0.0.1 - - [22/Apr/2025 08:19:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-22 08:19:46,016 - INFO - Received file upload request
+2025-04-22 08:19:46,018 - INFO - File saved to uploads\JobApplications.xlsx
+2025-04-22 08:19:46,054 - INFO - Validating column headers
+2025-04-22 08:19:46,054 - INFO - Normalizing column names and processing rows
+2025-04-22 08:19:46,058 - INFO - Added job from file: <Job EY - AI & Machine Learning Engineer - TMT - Manager - Consulting - Location OPEN (1581453)>
+2025-04-22 08:19:46,058 - INFO - Added job from file: <Job Cync - Director of Generative Artificial Intelligence & ML Innovation – Lending Transformation>
+2025-04-22 08:19:46,058 - INFO - Added job from file: <Job Splunk/Cisco - Engineering Manager, AI role at Splunk>
+2025-04-22 08:19:46,058 - INFO - Added job from file: <Job CapitalOne -  R212977 Posted 04/04/2025
+Director, Technical Program Management - Generative AI>
+2025-04-22 08:19:46,059 - INFO - Added job from file: <Job Telos - AI/ML Engineering Manager opening.>
+2025-04-22 08:19:46,059 - INFO - Added job from file: <Job Claritev - Director - AI (remote).>
+2025-04-22 08:19:46,059 - INFO - Added job from file: <Job DirectDataNetworks - Director of End-to-End AI Applications>
+2025-04-22 08:19:46,059 - INFO - Added job from file: <Job UPMC - 6728201359 - Director, AI Programs>
+2025-04-22 08:19:46,059 - INFO - Added job from file: <Job CrossCountry Consulting - Associate Director – AI Strategy>
+2025-04-22 08:19:46,059 - INFO - Added job from file: <Job Toptal - General Manager, AI>
+2025-04-22 08:19:46,059 - INFO - Added job from file: <Job C3AI - AI Engagement Manager / Director - Federal>
+2025-04-22 08:19:46,059 - INFO - Added job from file: <Job C2ai - AI Solution Manager (Federal) role at C3 AI>
+2025-04-22 08:19:46,060 - INFO - Added job from file: <Job ProtagoLabs Inc. - Product Manager - AI>
+2025-04-22 08:19:46,060 - INFO - Added job from file: <Job Accuenture - Techology Architecture -Resposible AI>
+2025-04-22 08:19:46,060 - INFO - Added job from file: <Job SitusAMC - AI Cloud Operations Lead - Remote>
+2025-04-22 08:19:46,060 - INFO - Added job from file: <Job Zscaler - People Technology - AI Transformation Lead>
+2025-04-22 08:19:46,060 - INFO - Added job from file: <Job Health Intelligence company LLC - Principal, GEN AI Strategy>
+2025-04-22 08:19:46,060 - INFO - Added job from file: <Job Logistics Management Institute - AI Engineer>
+2025-04-22 08:19:46,060 - INFO - Added job from file: <Job PWC - AI Solutions Engineering Delivery Lead>
+2025-04-22 08:19:46,061 - INFO - Added job from file: <Job A.Team - AI Strategy Lead>
+2025-04-22 08:19:46,061 - INFO - Added job from file: <Job Geico - Senior Product Manager, Conversational Chatbot>
+2025-04-22 08:19:46,061 - INFO - Added job from file: <Job Oracle - Principal Technical Program Manager>
+2025-04-22 08:19:46,061 - INFO - Added job from file: <Job Oracle  - Senior Director Product Management/Strategy (OCI)>
+2025-04-22 08:19:46,061 - INFO - Added job from file: <Job Datawatch Systems, Inc -  - Senior Manager of Technical Services >
+2025-04-22 08:19:46,061 - INFO - Added job from file: <Job Transformational Security, LLC - Program Manager>
+2025-04-22 08:19:46,061 - INFO - Added job from file: <Job Amazon - Principal, Technical Program Manager, SecOps Risk job ID 2934651>
+2025-04-22 08:19:46,062 - INFO - Added job from file: <Job Amazon - Technical Program Manager, Availability Product Team - APT>
+2025-04-22 08:19:46,062 - INFO - Added job from file: <Job Amazon - Principal PM-T GenAI Products, PXT Central Science>
+2025-04-22 08:19:46,062 - INFO - Added job from file: <Job Amazon - Technical Program Manager - GenAI, Amazon Bedrock GTM>
+2025-04-22 08:19:46,062 - INFO - Added job from file: <Job BoozAllen - Generative AI Program Manager>
+2025-04-22 08:19:46,062 - INFO - Added job from file: <Job AstraZeneca - Director, AI & Machine Learning :  R-223898>
+2025-04-22 08:19:46,062 - INFO - Added job from file: <Job NTTDATA - Gen AI Technical Consulting Director (Healthcare) - US Remote>
+2025-04-22 08:19:46,063 - INFO - Added job from file: <Job AgileDefence - VP of AI Solutions>
+2025-04-22 08:19:46,063 - INFO - Added job from file: <Job RSP Group - Chief Technology Officer>
+2025-04-22 08:19:46,063 - INFO - Added job from file: <Job TradingWhale - Founding CTO - AI/ML platform>
+2025-04-22 08:19:46,063 - INFO - Added job from file: <Job  American Alliance of Museums - Director, Technology & Digital Strategy>
+2025-04-22 08:19:46,063 - INFO - Added job from file: <Job Apple - 	Sales - Applied Commerce & Gen AI Engineering Program Manager>
+2025-04-22 08:19:46,063 - INFO - Added job from file: <Job Google - Technical Program Manager II, Risk and Compliance, CISO ->
+2025-04-22 08:19:46,063 - INFO - Added job from file: <Job Deliotte - Sr. Mgr, GenAI Lead Engineer, Application Development>
+2025-04-22 08:19:46,064 - INFO - Added job from file: <Job Deliotte -  Finance & Performance Finance GenAI Manager | Techno~Functional>
+2025-04-22 08:19:46,065 - INFO - Added job from file: <Job NetFlix -  	
+Technical Program Manager - Support >
+2025-04-22 08:19:46,065 - INFO - Added job from file: <Job Accunture - AI / Large Language Model Architect>
+2025-04-22 08:19:46,065 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA (Job ID: 2935611) >
+2025-04-22 08:19:46,065 - INFO - Added job from file: <Job correlation One - Lead Instructor: GenAI>
+2025-04-22 08:19:46,065 - INFO - Added job from file: <Job Master Card - Lead Technical Program Manager - R&D-R-246452 >
+2025-04-22 08:19:46,065 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA, FSI (Job ID: 2948881)>
+2025-04-22 08:19:46,065 - INFO - Added job from file: <Job Amazon - Senior Solutions Architect - GenAI, AWS Cloud Intelligence (Job ID: 2897558) >
+2025-04-22 08:19:46,066 - INFO - Added job from file: <Job Amazon - Senior Delivery Consultant- GenAI/ML, AWS, Industries (Job ID: 2925883)>
+2025-04-22 08:19:46,066 - INFO - Added job from file: <Job Amazon - Private Equity GenAI/ML Specialist (Job ID: 2953372)>
+2025-04-22 08:19:46,066 - INFO - Added job from file: <Job EY - Government and Public Sector - GenAI Developer Manager>
+2025-04-22 08:19:46,066 - INFO - Added job from file: <Job Verizon - AI Program Manager>
+2025-04-22 08:19:46,066 - INFO - Added job from file: <Job Wells Fargo - Generative AI Engineer  R-449047>
+2025-04-22 08:19:46,066 - INFO - Added job from file: <Job Avalara - Director, Technical Program Management>
+2025-04-22 08:19:46,066 - INFO - Added job from file: <Job FieldGuide - Principal Program Manager>
+2025-04-22 08:19:46,067 - INFO - Added job from file: <Job Capital One - Senior Manager, Technical Program Management:R2121781>
+2025-04-22 08:19:46,067 - INFO - Added job from file: <Job Capital One - Senior Manager, Technical Program Management:R211200>
+2025-04-22 08:19:46,067 - INFO - Added job from file: <Job Amgen - Associate Director, AI&D Engagement and Go-to-Market (GTM) Lead>
+2025-04-22 08:19:46,067 - INFO - Added job from file: <Job FTI Consulting’s Digital Transformation Practice -  Senior Solutions Architect – AI and ML Operations Engineering >
+2025-04-22 08:19:46,074 - INFO - File processed and data committed to the database
+2025-04-22 08:19:46,075 - INFO - 127.0.0.1 - - [22/Apr/2025 08:19:46] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-22 08:19:46,081 - INFO - Fetching all jobs from the database
+2025-04-22 08:19:46,082 - DEBUG - Retrieved jobs: [<Job EY - AI & Machine Learning Engineer - TMT - Manager - Consulting - Location OPEN (1581453)>, <Job Cync - Director of Generative Artificial Intelligence & ML Innovation – Lending Transformation>, <Job Splunk/Cisco - Engineering Manager, AI role at Splunk>, <Job CapitalOne -  R212977 Posted 04/04/2025
+Director, Technical Program Management - Generative AI>, <Job Telos - AI/ML Engineering Manager opening.>, <Job Claritev - Director - AI (remote).>, <Job DirectDataNetworks - Director of End-to-End AI Applications>, <Job UPMC - 6728201359 - Director, AI Programs>, <Job CrossCountry Consulting - Associate Director – AI Strategy>, <Job Toptal - General Manager, AI>, <Job C3AI - AI Engagement Manager / Director - Federal>, <Job C2ai - AI Solution Manager (Federal) role at C3 AI>, <Job ProtagoLabs Inc. - Product Manager - AI>, <Job Accuenture - Techology Architecture -Resposible AI>, <Job SitusAMC - AI Cloud Operations Lead - Remote>, <Job Zscaler - People Technology - AI Transformation Lead>, <Job Health Intelligence company LLC - Principal, GEN AI Strategy>, <Job Logistics Management Institute - AI Engineer>, <Job PWC - AI Solutions Engineering Delivery Lead>, <Job A.Team - AI Strategy Lead>, <Job Geico - Senior Product Manager, Conversational Chatbot>, <Job Oracle - Principal Technical Program Manager>, <Job Oracle  - Senior Director Product Management/Strategy (OCI)>, <Job Datawatch Systems, Inc -  - Senior Manager of Technical Services >, <Job Transformational Security, LLC - Program Manager>, <Job Amazon - Principal, Technical Program Manager, SecOps Risk job ID 2934651>, <Job Amazon - Technical Program Manager, Availability Product Team - APT>, <Job Amazon - Principal PM-T GenAI Products, PXT Central Science>, <Job Amazon - Technical Program Manager - GenAI, Amazon Bedrock GTM>, <Job BoozAllen - Generative AI Program Manager>, <Job AstraZeneca - Director, AI & Machine Learning :  R-223898>, <Job NTTDATA - Gen AI Technical Consulting Director (Healthcare) - US Remote>, <Job AgileDefence - VP of AI Solutions>, <Job RSP Group - Chief Technology Officer>, <Job TradingWhale - Founding CTO - AI/ML platform>, <Job  American Alliance of Museums - Director, Technology & Digital Strategy>, <Job Apple - 	Sales - Applied Commerce & Gen AI Engineering Program Manager>, <Job Google - Technical Program Manager II, Risk and Compliance, CISO ->, <Job Deliotte - Sr. Mgr, GenAI Lead Engineer, Application Development>, <Job Deliotte -  Finance & Performance Finance GenAI Manager | Techno~Functional>, <Job NetFlix -  	
+Technical Program Manager - Support >, <Job Accunture - AI / Large Language Model Architect>, <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA (Job ID: 2935611) >, <Job correlation One - Lead Instructor: GenAI>, <Job Master Card - Lead Technical Program Manager - R&D-R-246452 >, <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA, FSI (Job ID: 2948881)>, <Job Amazon - Senior Solutions Architect - GenAI, AWS Cloud Intelligence (Job ID: 2897558) >, <Job Amazon - Senior Delivery Consultant- GenAI/ML, AWS, Industries (Job ID: 2925883)>, <Job Amazon - Private Equity GenAI/ML Specialist (Job ID: 2953372)>, <Job EY - Government and Public Sector - GenAI Developer Manager>, <Job Verizon - AI Program Manager>, <Job Wells Fargo - Generative AI Engineer  R-449047>, <Job Avalara - Director, Technical Program Management>, <Job FieldGuide - Principal Program Manager>, <Job Capital One - Senior Manager, Technical Program Management:R2121781>, <Job Capital One - Senior Manager, Technical Program Management:R211200>, <Job Amgen - Associate Director, AI&D Engagement and Go-to-Market (GTM) Lead>, <Job FTI Consulting’s Digital Transformation Practice -  Senior Solutions Architect – AI and ML Operations Engineering >]
+2025-04-22 08:19:46,083 - INFO - 127.0.0.1 - - [22/Apr/2025 08:19:46] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:20:14,689 - INFO - 127.0.0.1 - - [22/Apr/2025 08:20:14] "[33mGET /None HTTP/1.1[0m" 404 -
+2025-04-22 08:20:23,764 - INFO - 127.0.0.1 - - [22/Apr/2025 08:20:23] "[33mGET /None HTTP/1.1[0m" 404 -
+2025-04-22 08:20:32,246 - INFO - 127.0.0.1 - - [22/Apr/2025 08:20:32] "GET /edit_job/48 HTTP/1.1" 200 -
+2025-04-22 08:22:04,331 - INFO - 127.0.0.1 - - [22/Apr/2025 08:22:04] "GET /edit_job/5 HTTP/1.1" 200 -
+2025-04-22 08:23:12,596 - INFO - 127.0.0.1 - - [22/Apr/2025 08:23:12] "GET /edit_job/3 HTTP/1.1" 200 -
+2025-04-22 08:23:36,692 - INFO - 127.0.0.1 - - [22/Apr/2025 08:23:36] "GET /edit_job/12 HTTP/1.1" 200 -
+2025-04-22 08:26:11,575 - INFO - 127.0.0.1 - - [22/Apr/2025 08:26:11] "[32mPOST /edit_job/12 HTTP/1.1[0m" 302 -
+2025-04-22 08:26:11,588 - INFO - Fetching all jobs from the database
+2025-04-22 08:26:11,590 - DEBUG - Retrieved jobs: [<Job EY - AI & Machine Learning Engineer - TMT - Manager - Consulting - Location OPEN (1581453)>, <Job Cync - Director of Generative Artificial Intelligence & ML Innovation – Lending Transformation>, <Job Splunk/Cisco - Engineering Manager, AI role at Splunk>, <Job CapitalOne -  R212977 Posted 04/04/2025
+Director, Technical Program Management - Generative AI>, <Job Telos - AI/ML Engineering Manager opening.>, <Job Claritev - Director - AI (remote).>, <Job DirectDataNetworks - Director of End-to-End AI Applications>, <Job UPMC - 6728201359 - Director, AI Programs>, <Job CrossCountry Consulting - Associate Director – AI Strategy>, <Job Toptal - General Manager, AI>, <Job C3AI - AI Engagement Manager / Director - Federal>, <Job C2ai - AI Solution Manager (Federal) role at C3 AI>, <Job ProtagoLabs Inc. - Product Manager - AI>, <Job Accuenture - Techology Architecture -Resposible AI>, <Job SitusAMC - AI Cloud Operations Lead - Remote>, <Job Zscaler - People Technology - AI Transformation Lead>, <Job Health Intelligence company LLC - Principal, GEN AI Strategy>, <Job Logistics Management Institute - AI Engineer>, <Job PWC - AI Solutions Engineering Delivery Lead>, <Job A.Team - AI Strategy Lead>, <Job Geico - Senior Product Manager, Conversational Chatbot>, <Job Oracle - Principal Technical Program Manager>, <Job Oracle  - Senior Director Product Management/Strategy (OCI)>, <Job Datawatch Systems, Inc -  - Senior Manager of Technical Services >, <Job Transformational Security, LLC - Program Manager>, <Job Amazon - Principal, Technical Program Manager, SecOps Risk job ID 2934651>, <Job Amazon - Technical Program Manager, Availability Product Team - APT>, <Job Amazon - Principal PM-T GenAI Products, PXT Central Science>, <Job Amazon - Technical Program Manager - GenAI, Amazon Bedrock GTM>, <Job BoozAllen - Generative AI Program Manager>, <Job AstraZeneca - Director, AI & Machine Learning :  R-223898>, <Job NTTDATA - Gen AI Technical Consulting Director (Healthcare) - US Remote>, <Job AgileDefence - VP of AI Solutions>, <Job RSP Group - Chief Technology Officer>, <Job TradingWhale - Founding CTO - AI/ML platform>, <Job  American Alliance of Museums - Director, Technology & Digital Strategy>, <Job Apple - 	Sales - Applied Commerce & Gen AI Engineering Program Manager>, <Job Google - Technical Program Manager II, Risk and Compliance, CISO ->, <Job Deliotte - Sr. Mgr, GenAI Lead Engineer, Application Development>, <Job Deliotte -  Finance & Performance Finance GenAI Manager | Techno~Functional>, <Job NetFlix -  	
+Technical Program Manager - Support >, <Job Accunture - AI / Large Language Model Architect>, <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA (Job ID: 2935611) >, <Job correlation One - Lead Instructor: GenAI>, <Job Master Card - Lead Technical Program Manager - R&D-R-246452 >, <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA, FSI (Job ID: 2948881)>, <Job Amazon - Senior Solutions Architect - GenAI, AWS Cloud Intelligence (Job ID: 2897558) >, <Job Amazon - Senior Delivery Consultant- GenAI/ML, AWS, Industries (Job ID: 2925883)>, <Job Amazon - Private Equity GenAI/ML Specialist (Job ID: 2953372)>, <Job EY - Government and Public Sector - GenAI Developer Manager>, <Job Verizon - AI Program Manager>, <Job Wells Fargo - Generative AI Engineer  R-449047>, <Job Avalara - Director, Technical Program Management>, <Job FieldGuide - Principal Program Manager>, <Job Capital One - Senior Manager, Technical Program Management:R2121781>, <Job Capital One - Senior Manager, Technical Program Management:R211200>, <Job Amgen - Associate Director, AI&D Engagement and Go-to-Market (GTM) Lead>, <Job FTI Consulting’s Digital Transformation Practice -  Senior Solutions Architect – AI and ML Operations Engineering >]
+2025-04-22 08:26:11,593 - INFO - 127.0.0.1 - - [22/Apr/2025 08:26:11] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:39:07,618 - INFO - Received POST request to add a new job
+2025-04-22 08:39:07,628 - INFO - Added new job: <Job Infosys - Senior Principal – Healthcare AI and Digital Consulting>
+2025-04-22 08:39:07,628 - INFO - 127.0.0.1 - - [22/Apr/2025 08:39:07] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+2025-04-22 08:39:07,644 - INFO - Fetching all jobs from the database
+2025-04-22 08:39:07,646 - DEBUG - Retrieved jobs: [<Job EY - AI & Machine Learning Engineer - TMT - Manager - Consulting - Location OPEN (1581453)>, <Job Cync - Director of Generative Artificial Intelligence & ML Innovation – Lending Transformation>, <Job Splunk/Cisco - Engineering Manager, AI role at Splunk>, <Job CapitalOne -  R212977 Posted 04/04/2025
+Director, Technical Program Management - Generative AI>, <Job Telos - AI/ML Engineering Manager opening.>, <Job Claritev - Director - AI (remote).>, <Job DirectDataNetworks - Director of End-to-End AI Applications>, <Job UPMC - 6728201359 - Director, AI Programs>, <Job CrossCountry Consulting - Associate Director – AI Strategy>, <Job Toptal - General Manager, AI>, <Job C3AI - AI Engagement Manager / Director - Federal>, <Job C2ai - AI Solution Manager (Federal) role at C3 AI>, <Job ProtagoLabs Inc. - Product Manager - AI>, <Job Accuenture - Techology Architecture -Resposible AI>, <Job SitusAMC - AI Cloud Operations Lead - Remote>, <Job Zscaler - People Technology - AI Transformation Lead>, <Job Health Intelligence company LLC - Principal, GEN AI Strategy>, <Job Logistics Management Institute - AI Engineer>, <Job PWC - AI Solutions Engineering Delivery Lead>, <Job A.Team - AI Strategy Lead>, <Job Geico - Senior Product Manager, Conversational Chatbot>, <Job Oracle - Principal Technical Program Manager>, <Job Oracle  - Senior Director Product Management/Strategy (OCI)>, <Job Datawatch Systems, Inc -  - Senior Manager of Technical Services >, <Job Transformational Security, LLC - Program Manager>, <Job Amazon - Principal, Technical Program Manager, SecOps Risk job ID 2934651>, <Job Amazon - Technical Program Manager, Availability Product Team - APT>, <Job Amazon - Principal PM-T GenAI Products, PXT Central Science>, <Job Amazon - Technical Program Manager - GenAI, Amazon Bedrock GTM>, <Job BoozAllen - Generative AI Program Manager>, <Job AstraZeneca - Director, AI & Machine Learning :  R-223898>, <Job NTTDATA - Gen AI Technical Consulting Director (Healthcare) - US Remote>, <Job AgileDefence - VP of AI Solutions>, <Job RSP Group - Chief Technology Officer>, <Job TradingWhale - Founding CTO - AI/ML platform>, <Job  American Alliance of Museums - Director, Technology & Digital Strategy>, <Job Apple - 	Sales - Applied Commerce & Gen AI Engineering Program Manager>, <Job Google - Technical Program Manager II, Risk and Compliance, CISO ->, <Job Deliotte - Sr. Mgr, GenAI Lead Engineer, Application Development>, <Job Deliotte -  Finance & Performance Finance GenAI Manager | Techno~Functional>, <Job NetFlix -  	
+Technical Program Manager - Support >, <Job Accunture - AI / Large Language Model Architect>, <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA (Job ID: 2935611) >, <Job correlation One - Lead Instructor: GenAI>, <Job Master Card - Lead Technical Program Manager - R&D-R-246452 >, <Job Amazon - Senior Solutions Architect - GenAI and Machine Learning, AGS US Specialist SA, FSI (Job ID: 2948881)>, <Job Amazon - Senior Solutions Architect - GenAI, AWS Cloud Intelligence (Job ID: 2897558) >, <Job Amazon - Senior Delivery Consultant- GenAI/ML, AWS, Industries (Job ID: 2925883)>, <Job Amazon - Private Equity GenAI/ML Specialist (Job ID: 2953372)>, <Job EY - Government and Public Sector - GenAI Developer Manager>, <Job Verizon - AI Program Manager>, <Job Wells Fargo - Generative AI Engineer  R-449047>, <Job Avalara - Director, Technical Program Management>, <Job FieldGuide - Principal Program Manager>, <Job Capital One - Senior Manager, Technical Program Management:R2121781>, <Job Capital One - Senior Manager, Technical Program Management:R211200>, <Job Amgen - Associate Director, AI&D Engagement and Go-to-Market (GTM) Lead>, <Job FTI Consulting’s Digital Transformation Practice -  Senior Solutions Architect – AI and ML Operations Engineering >, <Job Infosys - Senior Principal – Healthcare AI and Digital Consulting>]
+2025-04-22 08:39:07,647 - INFO - 127.0.0.1 - - [22/Apr/2025 08:39:07] "GET /jobs HTTP/1.1" 200 -
+2025-04-22 08:57:11,930 - INFO -  * Detected change in 'b:\\Coding\\MCP\\MCP2.0\\app.py', reloading
+2025-04-22 08:57:11,932 - INFO -  * Detected change in 'b:\\Coding\\MCP\\MCP2.0\\app.py', reloading
+2025-04-22 08:57:11,932 - INFO -  * Detected change in 'b:\\Coding\\MCP\\MCP2.0\\app.py', reloading
+2025-04-22 08:57:14,093 - INFO - Starting Flask application
+2025-04-22 08:57:14,113 - WARNING -  * Debugger is active!
+2025-04-22 08:57:14,120 - INFO -  * Debugger PIN: 745-208-935
