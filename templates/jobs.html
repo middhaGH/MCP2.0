@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">Job Applications</h1>
+        <h1 class="text-center">Career Crafter</h1>
 
         <!-- Tabs Navigation -->
         <ul class="nav nav-tabs" id="jobTabs" role="tablist">
@@ -41,7 +41,19 @@
 
             <!-- Job List Tab -->
             <div class="tab-pane fade" id="list" role="tabpanel" aria-labelledby="list-tab">
-                <h2 class="mt-4">Job List</h2>
+                <!-- Status Counts -->
+                <div class="mb-3">
+                    <span class="badge bg-primary me-2">Applied: {{ applied_count }}</span>
+                    <span class="badge bg-danger me-2">Rejected: {{ rejected_count }}</span>
+                    <span class="badge bg-warning text-dark">Interviewing: {{ interviewing_count }}</span>
+                </div>
+                <!-- Search Form -->
+                <form class="d-flex mb-3" method="get" action="{{ url_for('jobs') }}">
+                    <input class="form-control me-2" type="search" name="search" placeholder="Search by company, position, or status" value="{{ search_query }}">
+                    <button class="btn btn-outline-primary me-2" type="submit">Search</button>
+                    <a href="{{ url_for('download_jobs', search=search_query) }}" class="btn btn-outline-success">Download CSV</a>
+                </form>
+                <h2 class="mt-2">Job List</h2>
                 <table class="table table-bordered">
                     <thead>
                         <tr>
@@ -136,8 +148,12 @@
                 <h2 class="mt-4">PrepMe Chatbot</h2>
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Job: {{ jobs[0].company }} - {{ jobs[0].position }}</h5>
-                        <p class="card-text">Job Description: {{ jobs[0].job_description }}</p>
+                        {% if jobs %}
+                          <h5 class="card-title">Job: {{ jobs[0].company }} - {{ jobs[0].position }}</h5>
+                          <p class="card-text">Job Description: {{ jobs[0].job_description }}</p>
+                        {% else %}
+                          <p>No jobs available.</p>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="chat-container mt-4">
@@ -160,37 +176,30 @@
             {% if edit_job %}
             var addTab = document.getElementById('add-tab');
             var addContent = document.getElementById('add');
-
             // Activate the Add Job tab
             addTab.classList.add('active');
             addTab.setAttribute('aria-selected', 'true');
             addContent.classList.add('show', 'active');
-
             // Deactivate other tabs
             var uploadTab = document.getElementById('upload-tab');
             var uploadContent = document.getElementById('upload');
             var listTab = document.getElementById('list-tab');
             var listContent = document.getElementById('list');
-
             uploadTab.classList.remove('active');
             uploadTab.setAttribute('aria-selected', 'false');
             uploadContent.classList.remove('show', 'active');
-
             listTab.classList.remove('active');
             listTab.setAttribute('aria-selected', 'false');
             listContent.classList.remove('show', 'active');
             {% endif %}
         });
-
         document.addEventListener('DOMContentLoaded', function () {
             const prepmeButtons = document.querySelectorAll('.prepme-btn');
             const prepmeTab = document.getElementById('prepme-tab');
             const prepmeContent = document.getElementById('prepme');
-
             prepmeButtons.forEach(button => {
                 button.addEventListener('click', function () {
                     const jobId = this.getAttribute('data-job-id');
-
                     // Make an HTTP GET request to the /prepme/<job_id> route
                     fetch(`/prepme/${jobId}`)
                         .then(response => {
@@ -202,7 +211,6 @@
                         .then(html => {
                             // Update PrepMe tab content with the response HTML
                             prepmeContent.innerHTML = html;
-
                             // Activate the PrepMe tab
                             prepmeTab.click();
                         })
@@ -212,6 +220,23 @@
                         });
                 });
             });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var searchQuery = "{{ search_query }}";
+            if (searchQuery) {
+                var listTab = document.getElementById('list-tab');
+                var listContent = document.getElementById('list');
+                // Activate List tab
+                listTab.classList.add('active');
+                listTab.setAttribute('aria-selected', 'true');
+                listContent.classList.add('show', 'active');
+                // Deactivate Upload tab
+                var uploadTab = document.getElementById('upload-tab');
+                var uploadContent = document.getElementById('upload');
+                uploadTab.classList.remove('active');
+                uploadTab.setAttribute('aria-selected', 'false');
+                uploadContent.classList.remove('show', 'active');
+            }
         });
     </script>
 </body>

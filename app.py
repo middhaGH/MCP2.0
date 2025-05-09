@@ -1,18 +1,17 @@
 import logging
-from flask import Flask, render_template, request, redirect, url_for, flash
+from logging.handlers import RotatingFileHandler
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, Response
 from flask_sqlalchemy import SQLAlchemy
 import os
 import pandas as pd
 from werkzeug.utils import secure_filename
 import openpyxl
 from sqlalchemy.exc import SQLAlchemyError
+from sqlalchemy import or_
 import openai, sys  # Import OpenAI library
 from dotenv import load_dotenv
 from flask_migrate import Migrate
 from openai import OpenAI
-from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
-
-
 
 # Load environment variables from .env file
 load_dotenv()
@@ -20,10 +19,20 @@ load_dotenv()
 # Set your OpenAI API key from the .env file
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Configure logging
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s', filename='app.log', filemode='a')
+# Configure logging with rotating file handler
+handler = RotatingFileHandler('app.log', maxBytes=10000000, backupCount=5)
+handler.setFormatter(logging.Formatter(
+    '[%(asctime)s] %(levelname)s in %(module)s: %(message)s'
+))
+logging.basicConfig(
+    level=logging.DEBUG,
+    handlers=[handler]
+)
 
-app = Flask(__name__)
+# Add logger to Flask app
+app = Flask("Career Crafter")
+app.logger.addHandler(handler)
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///jobs.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -63,7 +72,10 @@ def index():
 def jobs():
     try:
         if request.method == 'POST':
-            logging.info("Received POST request to add a new job")
+            app.logger.info("Received POST request to add a new job", extra={
+                'company': request.form['company'],
+                'position': request.form['position']
+            })
             new_job = Job(
                 company=request.form['company'],
                 position=request.form['position'],
@@ -76,23 +88,59 @@ def jobs():
             )
             db.session.add(new_job)
             db.session.commit()
-            logging.info(f"Added new job: {new_job}")
+            app.logger.info("Successfully added new job", extra={
+                'job_id': new_job.id,
+                'company': new_job.company,
+                'position': new_job.position
+            })
             return redirect(url_for('jobs'))
 
-        logging.info("Fetching all jobs from the database")
-        all_jobs = Job.query.all()
-        logging.debug(f"Retrieved jobs: {all_jobs}")
-        return render_template('jobs.html', jobs=all_jobs)
+        app.logger.debug("Fetching jobs from database")
+        search_query = request.args.get('search', '').strip()
+        if search_query:
+            filter_cond = or_(
+                Job.company.ilike(f"%{search_query}%"),
+                Job.position.ilike(f"%{search_query}%"),
+                Job.status.ilike(f"%{search_query}%")
+            )
+            jobs_list = Job.query.filter(filter_cond).all()
+            app.logger.info(f"Retrieved {len(jobs_list)} jobs matching search '{search_query}'", extra={'search_query': search_query})
+        else:
+            jobs_list = Job.query.all()
+            app.logger.info("Retrieved all jobs from database", extra={'job_count': len(jobs_list)})
+        
+        # Compute counts for Applied, Rejected, Interviewing
+        applied_count = Job.query.filter_by(status='Applied').count()
+        rejected_count = Job.query.filter_by(status='Rejected').count()
+        interviewing_count = Job.query.filter_by(status='Interviewing').count()
+        return render_template('jobs.html', jobs=jobs_list, search_query=search_query,
+                               applied_count=applied_count,
+                               rejected_count=rejected_count,
+                               interviewing_count=interviewing_count)
     except SQLAlchemyError as e:
-        logging.error(f"Database error: {e}")
+        app.logger.error("Database error in jobs route", exc_info=True, extra={
+            'error': str(e)
+        })
         flash(f"Database error: {e}")
-        return render_template('jobs.html', jobs=[])
+        return render_template('jobs.html', jobs=[], search_query='',
+                               applied_count=0, rejected_count=0, interviewing_count=0)
 
 @app.route('/edit_job/<int:job_id>', methods=['GET', 'POST'])
 def edit_job(job_id):
     job = Job.query.get_or_404(job_id)
+    app.logger.info("Accessing job for edit", extra={
+        'job_id': job_id,
+        'company': job.company,
+        'position': job.position
+    })
 
     if request.method == 'POST':
+        app.logger.info("Updating job details", extra={
+            'job_id': job_id,
+            'old_status': job.status,
+            'new_status': request.form.get('status')
+        })
+        
         # Update the job details
         job.company = request.form['company']
         job.position = request.form['position']
@@ -102,16 +150,28 @@ def edit_job(job_id):
         job.interview_details = request.form.get('interview_details')
         job.comments = request.form.get('comments')
         job.link = request.form.get('link')
-        job.job_description = request.form.get('job_description')  # Update job description
+        job.job_description = request.form.get('job_description')
 
-        db.session.commit()
+        try:
+            db.session.commit()
+            app.logger.info("Successfully updated job", extra={
+                'job_id': job_id,
+                'company': job.company
+            })
+            
+            if job.job_description:
+                app.logger.debug("Generating interview plan")
+                interview_plan = generate_interview_plan(job.job_description)
+                flash(f"Interview Plan: {interview_plan}")
 
-        # Call LLM to generate interview plan
-        if job.job_description:
-            interview_plan = generate_interview_plan(job.job_description)
-            flash(f"Interview Plan: {interview_plan}")
-
-        return redirect(url_for('jobs'))
+            return redirect(url_for('jobs'))
+        except SQLAlchemyError as e:
+            app.logger.error("Failed to update job", exc_info=True, extra={
+                'job_id': job_id,
+                'error': str(e)
+            })
+            flash(f"Error updating job: {e}")
+            db.session.rollback()
 
     return render_template('jobs.html', jobs=Job.query.all(), edit_job=job)
 
@@ -156,8 +216,26 @@ def generate_interview_plan(job_description):
 @app.route('/delete_job/<int:job_id>', methods=['POST'])
 def delete_job(job_id):
     job = Job.query.get_or_404(job_id)
-    db.session.delete(job)
-    db.session.commit()
+    app.logger.info("Deleting job", extra={
+        'job_id': job_id,
+        'company': job.company,
+        'position': job.position
+    })
+    
+    try:
+        db.session.delete(job)
+        db.session.commit()
+        app.logger.info("Successfully deleted job", extra={
+            'job_id': job_id
+        })
+    except SQLAlchemyError as e:
+        app.logger.error("Failed to delete job", exc_info=True, extra={
+            'job_id': job_id,
+            'error': str(e)
+        })
+        db.session.rollback()
+        flash(f"Error deleting job: {e}")
+        
     return redirect(url_for('jobs'))
 
 @app.route('/upload', methods=['POST'])
@@ -263,32 +341,43 @@ def validate_columns():
         return f"Missing columns: {missing_columns}, Extra columns: {extra_columns}", 400
 
     return "Column names are aligned.", 200
+
 @app.route('/api/chat', methods=['POST'])
 def api_chat():
+    logging.info("[PrepMe] Received chat request")
     data = request.get_json() or {}
     user_msg = data.get('message', '').strip()
+    
+    logging.info(f"[PrepMe] User message: {user_msg}")
+    
     if not user_msg:
-        return jsonify(response="Please type something!")  # guard empty
-
-    # You can preload system/context messages here as needed
-    messages = [
-        {"role": "system", "content": "You are a helpful career coach."},
-        {"role": "user",   "content": user_msg}
-    ]
+        logging.warning("[PrepMe] Empty message received")
+        return jsonify(response="Please type something!")
 
     try:
-        # use your OpenAI client exactly like in prepme()
+        # You can preload system/context messages here as needed
+        messages = [
+            {"role": "system", "content": "You are a helpful career coach."},
+            {"role": "user", "content": user_msg}
+        ]
+
+        logging.info("[PrepMe] Calling OpenAI API")
         client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        
         chat = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=messages,
             max_tokens=150
         )
         reply = chat.choices[0].message.content.strip()
+        logging.info(f"[PrepMe] OpenAI response: {reply}")
+        
+        return jsonify(response=reply)
+        
     except Exception as e:
-        reply = f"Error: {str(e)}"
-
-    return jsonify(response=reply)
+        error_msg = f"Error: {str(e)}"
+        logging.error(f"[PrepMe] Chat error: {error_msg}")
+        return jsonify(response=error_msg)
 
 @app.route('/prepme/<int:job_id>', methods=['GET'])
 def prepme(job_id):
@@ -323,6 +412,40 @@ def prepme(job_id):
         initial_response = "Error generating response. Please try again later."
 
     return render_template('prepme.html', job=job, initial_context=initial_context, initial_response=initial_response)
+
+# Endpoint to download jobs as CSV
+@app.route('/download')
+def download_jobs():
+    search_query = request.args.get('search', '').strip()
+    if search_query:
+        filter_cond = or_(
+            Job.company.ilike(f"%{search_query}%"),
+            Job.position.ilike(f"%{search_query}%"),
+            Job.status.ilike(f"%{search_query}%")
+        )
+        jobs_list = Job.query.filter(filter_cond).all()
+    else:
+        jobs_list = Job.query.all()
+    # Prepare data for CSV
+    data = [
+        {'Company': job.company,
+         'Position': job.position,
+         'Resume Used': job.resume_used,
+         'Date Applied': job.date_applied,
+         'Status': job.status,
+         'Interview Details': job.interview_details,
+         'Comments': job.comments,
+         'Link': job.link,
+         'Job Description': job.job_description}
+        for job in jobs_list
+    ]
+    df = pd.DataFrame(data)
+    csv_data = df.to_csv(index=False)
+    return Response(
+        csv_data,
+        mimetype='text/csv',
+        headers={"Content-Disposition": "attachment;filename=jobs.csv"}
+    )
 
 # Helper function to check allowed file extensions
 def allowed_file(filename):

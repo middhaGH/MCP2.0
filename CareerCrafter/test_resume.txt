@@ -1,0 +1,3 @@
+Skills: Python, JavaScript, React, SQL, AWS
+Experience: 5 years of software development
+Education: BS in Computer Science
