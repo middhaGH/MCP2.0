@@ -11053,3 +11053,1220 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 [2025-05-08 21:42:29,863] WARNING in _internal:  * Debugger is active!
 [2025-05-08 21:42:29,871] INFO in _internal:  * Debugger PIN: 745-208-935
 [2025-05-08 22:44:25,824] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 08:19:02,738] INFO in app: Starting Flask application
+[2025-05-09 08:19:02,792] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.139:5000
+[2025-05-09 08:19:02,792] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-05-09 08:19:02,815] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 08:19:05,977] INFO in app: Starting Flask application
+[2025-05-09 08:19:05,988] WARNING in _internal:  * Debugger is active!
+[2025-05-09 08:19:05,999] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 08:19:06,025] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\fine_tuning\\job_create_params.py', reloading
+[2025-05-09 08:19:06,027] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\fine_tuning\\job_list_events_params.py', reloading
+[2025-05-09 08:19:06,028] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\fine_tuning\\job_list_params.py', reloading
+[2025-05-09 08:19:06,030] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\fine_tuning\\jobs\\__init__.py', reloading
+[2025-05-09 08:19:06,036] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\fine_tuning\\jobs\\checkpoint_list_params.py', reloading
+[2025-05-09 08:19:06,037] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\fine_tuning\\jobs\\fine_tuning_job_checkpoint.py', reloading
+[2025-05-09 08:19:06,039] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\image.py', reloading
+[2025-05-09 08:19:06,041] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\image_create_variation_params.py', reloading
+[2025-05-09 08:19:06,043] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\image_edit_params.py', reloading
+[2025-05-09 08:19:06,044] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\image_generate_params.py', reloading
+[2025-05-09 08:19:06,045] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\image_model.py', reloading
+[2025-05-09 08:19:06,047] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\images_response.py', reloading
+[2025-05-09 08:19:06,049] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\model.py', reloading
+[2025-05-09 08:19:06,050] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\model_deleted.py', reloading
+[2025-05-09 08:19:06,052] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\moderation.py', reloading
+[2025-05-09 08:19:06,053] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\moderation_create_params.py', reloading
+[2025-05-09 08:19:06,055] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\moderation_create_response.py', reloading
+[2025-05-09 08:19:06,056] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\moderation_image_url_input_param.py', reloading
+[2025-05-09 08:19:06,058] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\moderation_model.py', reloading
+[2025-05-09 08:19:06,059] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\moderation_multi_modal_input_param.py', reloading
+[2025-05-09 08:19:06,061] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\moderation_text_input_param.py', reloading
+[2025-05-09 08:19:06,063] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\other_file_chunking_strategy_object.py', reloading
+[2025-05-09 08:19:06,065] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\__init__.py', reloading
+[2025-05-09 08:19:06,229] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\computer_tool.py', reloading
+[2025-05-09 08:19:06,230] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\computer_tool_param.py', reloading
+[2025-05-09 08:19:06,231] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\easy_input_message.py', reloading
+[2025-05-09 08:19:06,233] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\easy_input_message_param.py', reloading
+[2025-05-09 08:19:06,234] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\file_search_tool.py', reloading
+[2025-05-09 08:19:06,236] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\file_search_tool_param.py', reloading
+[2025-05-09 08:19:06,237] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\function_tool.py', reloading
+[2025-05-09 08:19:06,238] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\function_tool_param.py', reloading
+[2025-05-09 08:19:06,240] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\input_item_list_params.py', reloading
+[2025-05-09 08:19:06,241] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\parsed_response.py', reloading
+[2025-05-09 08:19:06,243] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response.py', reloading
+[2025-05-09 08:19:06,244] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_audio_delta_event.py', reloading
+[2025-05-09 08:19:06,246] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_audio_done_event.py', reloading
+[2025-05-09 08:19:06,247] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_audio_transcript_delta_event.py', reloading
+[2025-05-09 08:19:06,249] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_audio_transcript_done_event.py', reloading
+[2025-05-09 08:19:06,250] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_code_interpreter_call_code_delta_event.py', reloading
+[2025-05-09 08:19:06,252] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_code_interpreter_call_code_done_event.py', reloading
+[2025-05-09 08:19:06,253] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_code_interpreter_call_completed_event.py', reloading
+[2025-05-09 08:19:06,255] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_code_interpreter_call_in_progress_event.py', reloading
+[2025-05-09 08:19:06,256] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_code_interpreter_call_interpreting_event.py', reloading
+[2025-05-09 08:19:06,258] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_code_interpreter_tool_call.py', reloading
+[2025-05-09 08:19:06,260] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_completed_event.py', reloading
+[2025-05-09 08:19:06,261] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_computer_tool_call.py', reloading
+[2025-05-09 08:19:06,263] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_computer_tool_call_output_item.py', reloading
+[2025-05-09 08:19:06,265] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_computer_tool_call_output_screenshot.py', reloading
+[2025-05-09 08:19:06,267] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_computer_tool_call_output_screenshot_param.py', reloading
+[2025-05-09 08:19:06,268] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_computer_tool_call_param.py', reloading
+[2025-05-09 08:19:06,269] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_content_part_added_event.py', reloading
+[2025-05-09 08:19:06,271] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_content_part_done_event.py', reloading
+[2025-05-09 08:19:06,272] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_create_params.py', reloading
+[2025-05-09 08:19:06,275] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_created_event.py', reloading
+[2025-05-09 08:19:06,277] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_error.py', reloading
+[2025-05-09 08:19:06,279] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_error_event.py', reloading
+[2025-05-09 08:19:06,280] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_failed_event.py', reloading
+[2025-05-09 08:19:06,282] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_file_search_call_completed_event.py', reloading
+[2025-05-09 08:19:06,284] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_file_search_call_in_progress_event.py', reloading
+[2025-05-09 08:19:06,285] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_file_search_call_searching_event.py', reloading
+[2025-05-09 08:19:06,287] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_file_search_tool_call.py', reloading
+[2025-05-09 08:19:06,288] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_file_search_tool_call_param.py', reloading
+[2025-05-09 08:19:06,290] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_format_text_config.py', reloading
+[2025-05-09 08:19:06,292] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_format_text_config_param.py', reloading
+[2025-05-09 08:19:06,293] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_format_text_json_schema_config.py', reloading
+[2025-05-09 08:19:06,294] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_format_text_json_schema_config_param.py', reloading
+[2025-05-09 08:19:06,296] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_function_call_arguments_delta_event.py', reloading
+[2025-05-09 08:19:06,297] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_function_call_arguments_done_event.py', reloading
+[2025-05-09 08:19:06,299] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_function_tool_call.py', reloading
+[2025-05-09 08:19:06,301] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_function_tool_call_item.py', reloading
+[2025-05-09 08:19:06,302] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_function_tool_call_output_item.py', reloading
+[2025-05-09 08:19:06,304] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_function_tool_call_param.py', reloading
+[2025-05-09 08:19:06,305] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_function_web_search.py', reloading
+[2025-05-09 08:19:06,307] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_function_web_search_param.py', reloading
+[2025-05-09 08:19:06,308] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_in_progress_event.py', reloading
+[2025-05-09 08:19:06,310] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_includable.py', reloading
+[2025-05-09 08:19:06,316] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_incomplete_event.py', reloading
+[2025-05-09 08:19:06,317] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_content.py', reloading
+[2025-05-09 08:19:06,319] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_content_param.py', reloading
+[2025-05-09 08:19:06,321] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_file.py', reloading
+[2025-05-09 08:19:06,322] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_file_param.py', reloading
+[2025-05-09 08:19:06,324] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_image.py', reloading
+[2025-05-09 08:19:06,325] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_image_param.py', reloading
+[2025-05-09 08:19:06,327] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_item_param.py', reloading
+[2025-05-09 08:19:06,328] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_message_content_list.py', reloading
+[2025-05-09 08:19:06,330] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_message_content_list_param.py', reloading
+[2025-05-09 08:19:06,332] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_message_item.py', reloading
+[2025-05-09 08:19:06,333] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_param.py', reloading
+[2025-05-09 08:19:06,335] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_text.py', reloading
+[2025-05-09 08:19:06,337] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_input_text_param.py', reloading
+[2025-05-09 08:19:06,338] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_item.py', reloading
+[2025-05-09 08:19:06,340] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_item_list.py', reloading
+[2025-05-09 08:19:06,342] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_output_item.py', reloading
+[2025-05-09 08:19:06,343] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_output_item_added_event.py', reloading
+[2025-05-09 08:19:06,345] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_output_item_done_event.py', reloading
+[2025-05-09 08:19:06,347] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_output_message.py', reloading
+[2025-05-09 08:19:06,348] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_output_message_param.py', reloading
+[2025-05-09 08:19:06,350] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_output_refusal.py', reloading
+[2025-05-09 08:19:06,351] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_output_refusal_param.py', reloading
+[2025-05-09 08:19:06,352] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_output_text.py', reloading
+[2025-05-09 08:19:06,354] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_output_text_param.py', reloading
+[2025-05-09 08:19:06,356] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_reasoning_item.py', reloading
+[2025-05-09 08:19:06,358] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_reasoning_item_param.py', reloading
+[2025-05-09 08:19:06,360] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_reasoning_summary_part_added_event.py', reloading
+[2025-05-09 08:19:06,361] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_reasoning_summary_part_done_event.py', reloading
+[2025-05-09 08:19:06,363] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_reasoning_summary_text_delta_event.py', reloading
+[2025-05-09 08:19:06,365] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_reasoning_summary_text_done_event.py', reloading
+[2025-05-09 08:19:06,367] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_refusal_delta_event.py', reloading
+[2025-05-09 08:19:06,369] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_refusal_done_event.py', reloading
+[2025-05-09 08:19:06,370] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_retrieve_params.py', reloading
+[2025-05-09 08:19:06,371] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_status.py', reloading
+[2025-05-09 08:19:06,373] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_stream_event.py', reloading
+[2025-05-09 08:19:06,374] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_text_annotation_delta_event.py', reloading
+[2025-05-09 08:19:06,375] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_text_config.py', reloading
+[2025-05-09 08:19:06,377] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_text_config_param.py', reloading
+[2025-05-09 08:19:06,379] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_text_delta_event.py', reloading
+[2025-05-09 08:19:06,380] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_text_done_event.py', reloading
+[2025-05-09 08:19:06,381] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_usage.py', reloading
+[2025-05-09 08:19:06,383] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_web_search_call_completed_event.py', reloading
+[2025-05-09 08:19:06,384] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_web_search_call_in_progress_event.py', reloading
+[2025-05-09 08:19:06,386] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\response_web_search_call_searching_event.py', reloading
+[2025-05-09 08:19:06,388] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\tool.py', reloading
+[2025-05-09 08:19:06,389] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\tool_choice_function.py', reloading
+[2025-05-09 08:19:06,391] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\tool_choice_function_param.py', reloading
+[2025-05-09 08:19:06,392] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\tool_choice_options.py', reloading
+[2025-05-09 08:19:06,394] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\tool_choice_types.py', reloading
+[2025-05-09 08:19:06,395] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\tool_choice_types_param.py', reloading
+[2025-05-09 08:19:06,397] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\tool_param.py', reloading
+[2025-05-09 08:19:06,398] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\web_search_tool.py', reloading
+[2025-05-09 08:19:06,401] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\responses\\web_search_tool_param.py', reloading
+[2025-05-09 08:19:06,402] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\__init__.py', reloading
+[2025-05-09 08:19:06,424] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\all_models.py', reloading
+[2025-05-09 08:19:06,426] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\chat_model.py', reloading
+[2025-05-09 08:19:06,427] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\comparison_filter.py', reloading
+[2025-05-09 08:19:06,429] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\compound_filter.py', reloading
+[2025-05-09 08:19:06,430] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\error_object.py', reloading
+[2025-05-09 08:19:06,431] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\function_definition.py', reloading
+[2025-05-09 08:19:06,433] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\function_parameters.py', reloading
+[2025-05-09 08:19:06,434] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\metadata.py', reloading
+[2025-05-09 08:19:06,436] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\reasoning.py', reloading
+[2025-05-09 08:19:06,437] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\reasoning_effort.py', reloading
+[2025-05-09 08:19:06,438] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\response_format_json_object.py', reloading
+[2025-05-09 08:19:06,439] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\response_format_json_schema.py', reloading
+[2025-05-09 08:19:06,441] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\response_format_text.py', reloading
+[2025-05-09 08:19:06,442] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared\\responses_model.py', reloading
+[2025-05-09 08:19:06,444] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\__init__.py', reloading
+[2025-05-09 08:19:06,464] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\chat_model.py', reloading
+[2025-05-09 08:19:06,465] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\comparison_filter.py', reloading
+[2025-05-09 08:19:06,467] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\compound_filter.py', reloading
+[2025-05-09 08:19:06,468] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\function_definition.py', reloading
+[2025-05-09 08:19:06,469] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\function_parameters.py', reloading
+[2025-05-09 08:19:06,470] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\metadata.py', reloading
+[2025-05-09 08:19:06,472] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\reasoning.py', reloading
+[2025-05-09 08:19:06,473] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\reasoning_effort.py', reloading
+[2025-05-09 08:19:06,474] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\response_format_json_object.py', reloading
+[2025-05-09 08:19:06,476] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\response_format_json_schema.py', reloading
+[2025-05-09 08:19:06,477] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\response_format_text.py', reloading
+[2025-05-09 08:19:06,479] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\shared_params\\responses_model.py', reloading
+[2025-05-09 08:19:06,480] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\static_file_chunking_strategy.py', reloading
+[2025-05-09 08:19:06,482] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\static_file_chunking_strategy_object.py', reloading
+[2025-05-09 08:19:06,483] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\static_file_chunking_strategy_object_param.py', reloading
+[2025-05-09 08:19:06,485] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\static_file_chunking_strategy_param.py', reloading
+[2025-05-09 08:19:06,486] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\upload.py', reloading
+[2025-05-09 08:19:06,487] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\upload_complete_params.py', reloading
+[2025-05-09 08:19:06,489] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\upload_create_params.py', reloading
+[2025-05-09 08:19:06,490] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\uploads\\__init__.py', reloading
+[2025-05-09 08:19:06,497] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\uploads\\part_create_params.py', reloading
+[2025-05-09 08:19:06,499] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\uploads\\upload_part.py', reloading
+[2025-05-09 08:19:06,501] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_store.py', reloading
+[2025-05-09 08:19:06,502] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_store_create_params.py', reloading
+[2025-05-09 08:19:06,503] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_store_deleted.py', reloading
+[2025-05-09 08:19:06,505] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_store_list_params.py', reloading
+[2025-05-09 08:19:06,506] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_store_search_params.py', reloading
+[2025-05-09 08:19:06,507] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_store_search_response.py', reloading
+[2025-05-09 08:19:06,509] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_store_update_params.py', reloading
+[2025-05-09 08:19:06,511] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\__init__.py', reloading
+[2025-05-09 08:19:06,529] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\file_batch_create_params.py', reloading
+[2025-05-09 08:19:06,530] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\file_batch_list_files_params.py', reloading
+[2025-05-09 08:19:06,532] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\file_content_response.py', reloading
+[2025-05-09 08:19:06,534] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\file_create_params.py', reloading
+[2025-05-09 08:19:06,536] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\file_list_params.py', reloading
+[2025-05-09 08:19:06,537] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\file_update_params.py', reloading
+[2025-05-09 08:19:06,538] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\vector_store_file.py', reloading
+[2025-05-09 08:19:06,540] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\vector_store_file_batch.py', reloading
+[2025-05-09 08:19:06,541] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\vector_stores\\vector_store_file_deleted.py', reloading
+[2025-05-09 08:19:06,542] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\types\\websocket_connection_options.py', reloading
+[2025-05-09 08:19:06,544] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\openai\\version.py', reloading
+[2025-05-09 08:19:06,558] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\__init__.py', reloading
+[2025-05-09 08:19:06,560] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\__main__.py', reloading
+[2025-05-09 08:19:06,561] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\__pip-runner__.py', reloading
+[2025-05-09 08:19:06,568] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\__init__.py', reloading
+[2025-05-09 08:19:06,585] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\build_env.py', reloading
+[2025-05-09 08:19:06,586] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cache.py', reloading
+[2025-05-09 08:19:06,587] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\__init__.py', reloading
+[2025-05-09 08:19:06,607] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\autocompletion.py', reloading
+[2025-05-09 08:19:06,608] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\base_command.py', reloading
+[2025-05-09 08:19:06,610] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\cmdoptions.py', reloading
+[2025-05-09 08:19:06,612] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\command_context.py', reloading
+[2025-05-09 08:19:06,615] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\index_command.py', reloading
+[2025-05-09 08:19:06,615] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\main.py', reloading
+[2025-05-09 08:19:06,616] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\main_parser.py', reloading
+[2025-05-09 08:19:06,618] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\parser.py', reloading
+[2025-05-09 08:19:06,619] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\progress_bars.py', reloading
+[2025-05-09 08:19:06,621] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\req_command.py', reloading
+[2025-05-09 08:19:06,622] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\spinners.py', reloading
+[2025-05-09 08:19:06,624] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\cli\\status_codes.py', reloading
+[2025-05-09 08:19:06,626] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\__init__.py', reloading
+[2025-05-09 08:19:06,653] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\cache.py', reloading
+[2025-05-09 08:19:06,654] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\check.py', reloading
+[2025-05-09 08:19:06,655] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\completion.py', reloading
+[2025-05-09 08:19:06,657] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\configuration.py', reloading
+[2025-05-09 08:19:06,658] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\debug.py', reloading
+[2025-05-09 08:19:06,660] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\download.py', reloading
+[2025-05-09 08:19:06,661] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\freeze.py', reloading
+[2025-05-09 08:19:06,663] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\hash.py', reloading
+[2025-05-09 08:19:06,664] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\help.py', reloading
+[2025-05-09 08:19:06,665] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\index.py', reloading
+[2025-05-09 08:19:06,666] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\inspect.py', reloading
+[2025-05-09 08:19:06,668] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\install.py', reloading
+[2025-05-09 08:19:06,669] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\list.py', reloading
+[2025-05-09 08:19:06,670] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\search.py', reloading
+[2025-05-09 08:19:06,671] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\show.py', reloading
+[2025-05-09 08:19:06,673] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\uninstall.py', reloading
+[2025-05-09 08:19:06,674] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\commands\\wheel.py', reloading
+[2025-05-09 08:19:06,676] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\configuration.py', reloading
+[2025-05-09 08:19:06,677] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\distributions\\__init__.py', reloading
+[2025-05-09 08:19:06,686] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\distributions\\base.py', reloading
+[2025-05-09 08:19:06,689] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\distributions\\installed.py', reloading
+[2025-05-09 08:19:06,691] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\distributions\\sdist.py', reloading
+[2025-05-09 08:19:06,694] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\distributions\\wheel.py', reloading
+[2025-05-09 08:19:06,697] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\exceptions.py', reloading
+[2025-05-09 08:19:06,699] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\index\\__init__.py', reloading
+[2025-05-09 08:19:06,709] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\index\\collector.py', reloading
+[2025-05-09 08:19:06,712] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\index\\package_finder.py', reloading
+[2025-05-09 08:19:06,715] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\index\\sources.py', reloading
+[2025-05-09 08:19:06,717] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\locations\\__init__.py', reloading
+[2025-05-09 08:19:06,728] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\locations\\_distutils.py', reloading
+[2025-05-09 08:19:06,730] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\locations\\_sysconfig.py', reloading
+[2025-05-09 08:19:06,732] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\locations\\base.py', reloading
+[2025-05-09 08:19:06,734] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\main.py', reloading
+[2025-05-09 08:19:06,735] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\metadata\\__init__.py', reloading
+[2025-05-09 08:19:06,741] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\metadata\\_json.py', reloading
+[2025-05-09 08:19:06,743] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\metadata\\base.py', reloading
+[2025-05-09 08:19:06,744] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\metadata\\importlib\\__init__.py', reloading
+[2025-05-09 08:19:06,753] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\metadata\\importlib\\_compat.py', reloading
+[2025-05-09 08:19:06,755] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\metadata\\importlib\\_dists.py', reloading
+[2025-05-09 08:19:06,757] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\metadata\\importlib\\_envs.py', reloading
+[2025-05-09 08:19:06,760] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\metadata\\pkg_resources.py', reloading
+[2025-05-09 08:19:06,761] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\__init__.py', reloading
+[2025-05-09 08:19:06,778] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\candidate.py', reloading
+[2025-05-09 08:19:06,779] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\direct_url.py', reloading
+[2025-05-09 08:19:06,781] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\format_control.py', reloading
+[2025-05-09 08:19:06,782] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\index.py', reloading
+[2025-05-09 08:19:06,783] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\installation_report.py', reloading
+[2025-05-09 08:19:06,785] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\link.py', reloading
+[2025-05-09 08:19:06,788] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\scheme.py', reloading
+[2025-05-09 08:19:06,789] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\search_scope.py', reloading
+[2025-05-09 08:19:06,790] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\selection_prefs.py', reloading
+[2025-05-09 08:19:06,792] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\target_python.py', reloading
+[2025-05-09 08:19:06,793] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\models\\wheel.py', reloading
+[2025-05-09 08:19:06,794] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\network\\__init__.py', reloading
+[2025-05-09 08:19:06,806] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\network\\auth.py', reloading
+[2025-05-09 08:19:06,807] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\network\\cache.py', reloading
+[2025-05-09 08:19:06,810] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\network\\download.py', reloading
+[2025-05-09 08:19:06,811] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\network\\lazy_wheel.py', reloading
+[2025-05-09 08:19:06,813] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\network\\session.py', reloading
+[2025-05-09 08:19:06,814] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\network\\utils.py', reloading
+[2025-05-09 08:19:06,815] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\network\\xmlrpc.py', reloading
+[2025-05-09 08:19:06,831] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\build\\build_tracker.py', reloading
+[2025-05-09 08:19:06,833] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata.py', reloading
+[2025-05-09 08:19:06,834] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata_editable.py', reloading
+[2025-05-09 08:19:06,835] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\build\\metadata_legacy.py', reloading
+[2025-05-09 08:19:06,836] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel.py', reloading
+[2025-05-09 08:19:06,837] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel_editable.py', reloading
+[2025-05-09 08:19:06,839] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\build\\wheel_legacy.py', reloading
+[2025-05-09 08:19:06,840] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\check.py', reloading
+[2025-05-09 08:19:06,841] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\freeze.py', reloading
+[2025-05-09 08:19:06,843] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\install\\__init__.py', reloading
+[2025-05-09 08:19:06,848] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\install\\editable_legacy.py', reloading
+[2025-05-09 08:19:06,850] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\install\\wheel.py', reloading
+[2025-05-09 08:19:06,851] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\operations\\prepare.py', reloading
+[2025-05-09 08:19:06,854] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\pyproject.py', reloading
+[2025-05-09 08:19:06,855] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\req\\__init__.py', reloading
+[2025-05-09 08:19:06,866] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\req\\constructors.py', reloading
+[2025-05-09 08:19:06,868] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\req\\req_file.py', reloading
+[2025-05-09 08:19:06,870] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\req\\req_install.py', reloading
+[2025-05-09 08:19:06,872] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\req\\req_set.py', reloading
+[2025-05-09 08:19:06,873] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\req\\req_uninstall.py', reloading
+[2025-05-09 08:19:06,879] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\base.py', reloading
+[2025-05-09 08:19:06,884] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\legacy\\resolver.py', reloading
+[2025-05-09 08:19:06,901] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\base.py', reloading
+[2025-05-09 08:19:06,903] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\candidates.py', reloading
+[2025-05-09 08:19:06,904] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\factory.py', reloading
+[2025-05-09 08:19:06,905] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\found_candidates.py', reloading
+[2025-05-09 08:19:06,907] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\provider.py', reloading
+[2025-05-09 08:19:06,909] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\reporter.py', reloading
+[2025-05-09 08:19:06,910] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\requirements.py', reloading
+[2025-05-09 08:19:06,912] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\resolution\\resolvelib\\resolver.py', reloading
+[2025-05-09 08:19:06,913] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\self_outdated_check.py', reloading
+[2025-05-09 08:19:06,954] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\_jaraco_text.py', reloading
+[2025-05-09 08:19:06,955] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\_log.py', reloading
+[2025-05-09 08:19:06,957] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\appdirs.py', reloading
+[2025-05-09 08:19:06,959] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\compat.py', reloading
+[2025-05-09 08:19:06,960] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\compatibility_tags.py', reloading
+[2025-05-09 08:19:06,961] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\datetime.py', reloading
+[2025-05-09 08:19:06,963] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\deprecation.py', reloading
+[2025-05-09 08:19:06,964] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\direct_url_helpers.py', reloading
+[2025-05-09 08:19:06,965] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\egg_link.py', reloading
+[2025-05-09 08:19:06,966] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\encoding.py', reloading
+[2025-05-09 08:19:06,968] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\entrypoints.py', reloading
+[2025-05-09 08:19:06,969] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\filesystem.py', reloading
+[2025-05-09 08:19:06,970] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\filetypes.py', reloading
+[2025-05-09 08:19:06,971] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\glibc.py', reloading
+[2025-05-09 08:19:06,973] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\hashes.py', reloading
+[2025-05-09 08:19:06,974] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\logging.py', reloading
+[2025-05-09 08:19:06,975] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\misc.py', reloading
+[2025-05-09 08:19:06,977] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\packaging.py', reloading
+[2025-05-09 08:19:06,978] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\retry.py', reloading
+[2025-05-09 08:19:06,979] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\setuptools_build.py', reloading
+[2025-05-09 08:19:06,981] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\subprocess.py', reloading
+[2025-05-09 08:19:06,982] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\temp_dir.py', reloading
+[2025-05-09 08:19:06,983] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\unpacking.py', reloading
+[2025-05-09 08:19:06,985] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\urls.py', reloading
+[2025-05-09 08:19:06,986] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\virtualenv.py', reloading
+[2025-05-09 08:19:06,987] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\utils\\wheel.py', reloading
+[2025-05-09 08:19:06,989] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\vcs\\__init__.py', reloading
+[2025-05-09 08:19:06,999] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\vcs\\bazaar.py', reloading
+[2025-05-09 08:19:07,000] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\vcs\\git.py', reloading
+[2025-05-09 08:19:07,002] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\vcs\\mercurial.py', reloading
+[2025-05-09 08:19:07,003] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\vcs\\subversion.py', reloading
+[2025-05-09 08:19:07,004] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\vcs\\versioncontrol.py', reloading
+[2025-05-09 08:19:07,006] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_internal\\wheel_builder.py', reloading
+[2025-05-09 08:19:07,007] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_vendor\\__init__.py', reloading
+[2025-05-09 08:19:07,013] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\pip\\_vendor\\cachecontrol\\__init__.py', reloading
+[2025-05-09 08:19:07,379] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 08:19:10,741] INFO in app: Starting Flask application
+[2025-05-09 08:19:10,751] WARNING in _internal:  * Debugger is active!
+[2025-05-09 08:19:10,759] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 08:19:10,782] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\protocols\\http\\httptools_impl.py', reloading
+[2025-05-09 08:19:10,783] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\protocols\\utils.py', reloading
+[2025-05-09 08:19:10,790] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\auto.py', reloading
+[2025-05-09 08:19:10,791] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\websockets_impl.py', reloading
+[2025-05-09 08:19:10,792] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\protocols\\websockets\\wsproto_impl.py', reloading
+[2025-05-09 08:19:10,795] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\server.py', reloading
+[2025-05-09 08:19:10,796] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\supervisors\\__init__.py', reloading
+[2025-05-09 08:19:10,804] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\supervisors\\basereload.py', reloading
+[2025-05-09 08:19:10,806] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\supervisors\\multiprocess.py', reloading
+[2025-05-09 08:19:10,807] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\supervisors\\statreload.py', reloading
+[2025-05-09 08:19:10,809] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\supervisors\\watchfilesreload.py', reloading
+[2025-05-09 08:19:10,811] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\vCC\\Lib\\site-packages\\uvicorn\\workers.py', reloading
+[2025-05-09 08:19:10,911] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\myfirstcode.py', reloading
+[2025-05-09 08:19:12,190] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 08:19:14,914] INFO in app: Starting Flask application
+[2025-05-09 08:19:14,923] WARNING in _internal:  * Debugger is active!
+[2025-05-09 08:19:14,931] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 08:19:14,952] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:19:14] "[32mGET / HTTP/1.1[0m" 302 -
+[2025-05-09 08:19:14,962] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:19:14,962] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:19:14,980] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:19:14,980] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:19:15,050] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:19:15] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 08:19:15,392] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:19:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 08:19:54,061] INFO in app: Received POST request to add a new job
+[2025-05-09 08:19:54,061] INFO in app: Received POST request to add a new job
+[2025-05-09 08:19:54,068] INFO in app: Successfully added new job
+[2025-05-09 08:19:54,068] INFO in app: Successfully added new job
+[2025-05-09 08:19:54,068] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:19:54] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 08:19:54,074] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:19:54,074] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:19:54,077] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:19:54,077] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:19:54,084] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:19:54] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 08:20:23,084] INFO in app: Received POST request to add a new job
+[2025-05-09 08:20:23,084] INFO in app: Received POST request to add a new job
+[2025-05-09 08:20:23,090] INFO in app: Successfully added new job
+[2025-05-09 08:20:23,090] INFO in app: Successfully added new job
+[2025-05-09 08:20:23,091] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:20:23] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 08:20:23,100] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:20:23,100] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:20:23,102] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:20:23,102] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:20:23,105] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:20:23] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 08:30:06,153] INFO in app: Received POST request to add a new job
+[2025-05-09 08:30:06,153] INFO in app: Received POST request to add a new job
+[2025-05-09 08:30:06,161] INFO in app: Successfully added new job
+[2025-05-09 08:30:06,161] INFO in app: Successfully added new job
+[2025-05-09 08:30:06,161] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:30:06] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 08:30:06,166] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:30:06,166] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:30:06,168] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:30:06,168] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:30:06,173] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:30:06] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 08:30:46,196] INFO in app: Received POST request to add a new job
+[2025-05-09 08:30:46,196] INFO in app: Received POST request to add a new job
+[2025-05-09 08:30:46,203] INFO in app: Successfully added new job
+[2025-05-09 08:30:46,203] INFO in app: Successfully added new job
+[2025-05-09 08:30:46,204] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:30:46] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 08:30:46,212] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:30:46,212] DEBUG in app: Fetching jobs from database
+[2025-05-09 08:30:46,213] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:30:46,213] INFO in app: Retrieved all jobs from database
+[2025-05-09 08:30:46,217] INFO in _internal: 127.0.0.1 - - [09/May/2025 08:30:46] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 08:54:11,021] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 08:54:11,382] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 08:54:14,618] INFO in app: Starting Flask application
+[2025-05-09 08:54:14,627] WARNING in _internal:  * Debugger is active!
+[2025-05-09 08:54:14,637] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 09:54:11,060] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 09:54:11,914] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 09:54:14,534] INFO in app: Starting Flask application
+[2025-05-09 09:54:14,543] WARNING in _internal:  * Debugger is active!
+[2025-05-09 09:54:14,552] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 10:54:11,258] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 10:54:11,738] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 10:54:14,291] INFO in app: Starting Flask application
+[2025-05-09 10:54:14,300] WARNING in _internal:  * Debugger is active!
+[2025-05-09 10:54:14,308] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 11:20:53,012] INFO in app: Received POST request to add a new job
+[2025-05-09 11:20:53,012] INFO in app: Received POST request to add a new job
+[2025-05-09 11:20:53,037] INFO in app: Successfully added new job
+[2025-05-09 11:20:53,037] INFO in app: Successfully added new job
+[2025-05-09 11:20:53,037] INFO in _internal: 127.0.0.1 - - [09/May/2025 11:20:53] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 11:20:53,042] DEBUG in app: Fetching jobs from database
+[2025-05-09 11:20:53,042] DEBUG in app: Fetching jobs from database
+[2025-05-09 11:20:53,044] INFO in app: Retrieved all jobs from database
+[2025-05-09 11:20:53,044] INFO in app: Retrieved all jobs from database
+[2025-05-09 11:20:53,075] INFO in _internal: 127.0.0.1 - - [09/May/2025 11:20:53] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 11:50:19,644] INFO in app: Received POST request to add a new job
+[2025-05-09 11:50:19,644] INFO in app: Received POST request to add a new job
+[2025-05-09 11:50:19,653] INFO in app: Successfully added new job
+[2025-05-09 11:50:19,653] INFO in app: Successfully added new job
+[2025-05-09 11:50:19,653] INFO in _internal: 127.0.0.1 - - [09/May/2025 11:50:19] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 11:50:19,658] DEBUG in app: Fetching jobs from database
+[2025-05-09 11:50:19,658] DEBUG in app: Fetching jobs from database
+[2025-05-09 11:50:19,660] INFO in app: Retrieved all jobs from database
+[2025-05-09 11:50:19,660] INFO in app: Retrieved all jobs from database
+[2025-05-09 11:50:19,664] INFO in _internal: 127.0.0.1 - - [09/May/2025 11:50:19] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 12:06:03,232] INFO in app: Received POST request to add a new job
+[2025-05-09 12:06:03,232] INFO in app: Received POST request to add a new job
+[2025-05-09 12:06:03,240] INFO in app: Successfully added new job
+[2025-05-09 12:06:03,240] INFO in app: Successfully added new job
+[2025-05-09 12:06:03,240] INFO in _internal: 127.0.0.1 - - [09/May/2025 12:06:03] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 12:06:03,253] DEBUG in app: Fetching jobs from database
+[2025-05-09 12:06:03,253] DEBUG in app: Fetching jobs from database
+[2025-05-09 12:06:03,254] INFO in app: Retrieved all jobs from database
+[2025-05-09 12:06:03,254] INFO in app: Retrieved all jobs from database
+[2025-05-09 12:06:03,258] INFO in _internal: 127.0.0.1 - - [09/May/2025 12:06:03] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 12:24:11,326] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 12:24:12,448] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 12:24:21,146] INFO in app: Starting Flask application
+[2025-05-09 12:24:21,160] WARNING in _internal:  * Debugger is active!
+[2025-05-09 12:24:21,167] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 13:36:12,755] INFO in app: Received POST request to add a new job
+[2025-05-09 13:36:12,755] INFO in app: Received POST request to add a new job
+[2025-05-09 13:36:12,842] INFO in app: Successfully added new job
+[2025-05-09 13:36:12,842] INFO in app: Successfully added new job
+[2025-05-09 13:36:12,844] INFO in _internal: 127.0.0.1 - - [09/May/2025 13:36:12] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 13:36:12,852] DEBUG in app: Fetching jobs from database
+[2025-05-09 13:36:12,852] DEBUG in app: Fetching jobs from database
+[2025-05-09 13:36:12,871] INFO in app: Retrieved all jobs from database
+[2025-05-09 13:36:12,871] INFO in app: Retrieved all jobs from database
+[2025-05-09 13:36:12,986] INFO in _internal: 127.0.0.1 - - [09/May/2025 13:36:12] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 13:36:34,471] DEBUG in app: Fetching jobs from database
+[2025-05-09 13:36:34,471] DEBUG in app: Fetching jobs from database
+[2025-05-09 13:36:34,473] INFO in app: Retrieved 1 jobs matching search 'cisco'
+[2025-05-09 13:36:34,473] INFO in app: Retrieved 1 jobs matching search 'cisco'
+[2025-05-09 13:36:34,476] INFO in _internal: 127.0.0.1 - - [09/May/2025 13:36:34] "GET /jobs?search=cisco HTTP/1.1" 200 -
+[2025-05-09 13:41:23,160] INFO in app: Received POST request to add a new job
+[2025-05-09 13:41:23,160] INFO in app: Received POST request to add a new job
+[2025-05-09 13:41:23,167] INFO in app: Successfully added new job
+[2025-05-09 13:41:23,167] INFO in app: Successfully added new job
+[2025-05-09 13:41:23,167] INFO in _internal: 127.0.0.1 - - [09/May/2025 13:41:23] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 13:41:23,175] DEBUG in app: Fetching jobs from database
+[2025-05-09 13:41:23,175] DEBUG in app: Fetching jobs from database
+[2025-05-09 13:41:23,176] INFO in app: Retrieved all jobs from database
+[2025-05-09 13:41:23,176] INFO in app: Retrieved all jobs from database
+[2025-05-09 13:41:23,181] INFO in _internal: 127.0.0.1 - - [09/May/2025 13:41:23] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 13:54:11,329] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 13:54:12,675] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 13:54:15,943] INFO in app: Starting Flask application
+[2025-05-09 13:54:15,955] WARNING in _internal:  * Debugger is active!
+[2025-05-09 13:54:15,964] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 14:11:19,142] INFO in app: Received POST request to add a new job
+[2025-05-09 14:11:19,142] INFO in app: Received POST request to add a new job
+[2025-05-09 14:11:19,169] INFO in app: Successfully added new job
+[2025-05-09 14:11:19,169] INFO in app: Successfully added new job
+[2025-05-09 14:11:19,169] INFO in _internal: 127.0.0.1 - - [09/May/2025 14:11:19] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 14:11:19,174] DEBUG in app: Fetching jobs from database
+[2025-05-09 14:11:19,174] DEBUG in app: Fetching jobs from database
+[2025-05-09 14:11:19,178] INFO in app: Retrieved all jobs from database
+[2025-05-09 14:11:19,178] INFO in app: Retrieved all jobs from database
+[2025-05-09 14:11:19,202] INFO in _internal: 127.0.0.1 - - [09/May/2025 14:11:19] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 14:56:51,794] INFO in app: Received POST request to add a new job
+[2025-05-09 14:56:51,794] INFO in app: Received POST request to add a new job
+[2025-05-09 14:56:51,810] INFO in app: Successfully added new job
+[2025-05-09 14:56:51,810] INFO in app: Successfully added new job
+[2025-05-09 14:56:51,811] INFO in _internal: 127.0.0.1 - - [09/May/2025 14:56:51] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 14:56:51,816] DEBUG in app: Fetching jobs from database
+[2025-05-09 14:56:51,816] DEBUG in app: Fetching jobs from database
+[2025-05-09 14:56:51,818] INFO in app: Retrieved all jobs from database
+[2025-05-09 14:56:51,818] INFO in app: Retrieved all jobs from database
+[2025-05-09 14:56:51,824] INFO in _internal: 127.0.0.1 - - [09/May/2025 14:56:51] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 14:57:22,770] INFO in app: Received POST request to add a new job
+[2025-05-09 14:57:22,770] INFO in app: Received POST request to add a new job
+[2025-05-09 14:57:22,775] INFO in app: Successfully added new job
+[2025-05-09 14:57:22,775] INFO in app: Successfully added new job
+[2025-05-09 14:57:22,775] INFO in _internal: 127.0.0.1 - - [09/May/2025 14:57:22] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 14:57:22,783] DEBUG in app: Fetching jobs from database
+[2025-05-09 14:57:22,783] DEBUG in app: Fetching jobs from database
+[2025-05-09 14:57:22,785] INFO in app: Retrieved all jobs from database
+[2025-05-09 14:57:22,785] INFO in app: Retrieved all jobs from database
+[2025-05-09 14:57:22,789] INFO in _internal: 127.0.0.1 - - [09/May/2025 14:57:22] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 14:57:49,457] INFO in app: Received POST request to add a new job
+[2025-05-09 14:57:49,457] INFO in app: Received POST request to add a new job
+[2025-05-09 14:57:49,465] INFO in app: Successfully added new job
+[2025-05-09 14:57:49,465] INFO in app: Successfully added new job
+[2025-05-09 14:57:49,465] INFO in _internal: 127.0.0.1 - - [09/May/2025 14:57:49] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 14:57:49,471] DEBUG in app: Fetching jobs from database
+[2025-05-09 14:57:49,471] DEBUG in app: Fetching jobs from database
+[2025-05-09 14:57:49,472] INFO in app: Retrieved all jobs from database
+[2025-05-09 14:57:49,472] INFO in app: Retrieved all jobs from database
+[2025-05-09 14:57:49,479] INFO in _internal: 127.0.0.1 - - [09/May/2025 14:57:49] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 15:24:11,372] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 15:24:12,338] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 15:24:15,481] INFO in app: Starting Flask application
+[2025-05-09 15:24:15,497] WARNING in _internal:  * Debugger is active!
+[2025-05-09 15:24:15,509] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 15:53:45,359] INFO in app: Received POST request to add a new job
+[2025-05-09 15:53:45,359] INFO in app: Received POST request to add a new job
+[2025-05-09 15:53:45,374] INFO in app: Successfully added new job
+[2025-05-09 15:53:45,374] INFO in app: Successfully added new job
+[2025-05-09 15:53:45,374] INFO in _internal: 127.0.0.1 - - [09/May/2025 15:53:45] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 15:53:45,379] DEBUG in app: Fetching jobs from database
+[2025-05-09 15:53:45,379] DEBUG in app: Fetching jobs from database
+[2025-05-09 15:53:45,381] INFO in app: Retrieved all jobs from database
+[2025-05-09 15:53:45,381] INFO in app: Retrieved all jobs from database
+[2025-05-09 15:53:45,403] INFO in _internal: 127.0.0.1 - - [09/May/2025 15:53:45] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 15:53:45,442] INFO in _internal: 127.0.0.1 - - [09/May/2025 15:53:45] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 15:58:32,030] INFO in app: Received POST request to add a new job
+[2025-05-09 15:58:32,030] INFO in app: Received POST request to add a new job
+[2025-05-09 15:58:32,038] INFO in app: Successfully added new job
+[2025-05-09 15:58:32,038] INFO in app: Successfully added new job
+[2025-05-09 15:58:32,039] INFO in _internal: 127.0.0.1 - - [09/May/2025 15:58:32] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 15:58:32,044] DEBUG in app: Fetching jobs from database
+[2025-05-09 15:58:32,044] DEBUG in app: Fetching jobs from database
+[2025-05-09 15:58:32,046] INFO in app: Retrieved all jobs from database
+[2025-05-09 15:58:32,046] INFO in app: Retrieved all jobs from database
+[2025-05-09 15:58:32,052] INFO in _internal: 127.0.0.1 - - [09/May/2025 15:58:32] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 16:24:11,448] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 16:24:12,098] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 16:24:15,341] INFO in app: Starting Flask application
+[2025-05-09 16:24:15,352] WARNING in _internal:  * Debugger is active!
+[2025-05-09 16:24:15,361] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 17:37:46,899] INFO in app: Received POST request to add a new job
+[2025-05-09 17:37:46,899] INFO in app: Received POST request to add a new job
+[2025-05-09 17:37:46,925] INFO in app: Successfully added new job
+[2025-05-09 17:37:46,925] INFO in app: Successfully added new job
+[2025-05-09 17:37:46,926] INFO in _internal: 127.0.0.1 - - [09/May/2025 17:37:46] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 17:37:46,933] DEBUG in app: Fetching jobs from database
+[2025-05-09 17:37:46,933] DEBUG in app: Fetching jobs from database
+[2025-05-09 17:37:46,935] INFO in app: Retrieved all jobs from database
+[2025-05-09 17:37:46,935] INFO in app: Retrieved all jobs from database
+[2025-05-09 17:37:46,961] INFO in _internal: 127.0.0.1 - - [09/May/2025 17:37:46] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 17:37:46,996] INFO in _internal: 127.0.0.1 - - [09/May/2025 17:37:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 17:42:54,350] INFO in app: Received POST request to add a new job
+[2025-05-09 17:42:54,350] INFO in app: Received POST request to add a new job
+[2025-05-09 17:42:54,368] INFO in app: Successfully added new job
+[2025-05-09 17:42:54,368] INFO in app: Successfully added new job
+[2025-05-09 17:42:54,368] INFO in _internal: 127.0.0.1 - - [09/May/2025 17:42:54] "[32mPOST /jobs HTTP/1.1[0m" 302 -
+[2025-05-09 17:42:54,375] DEBUG in app: Fetching jobs from database
+[2025-05-09 17:42:54,375] DEBUG in app: Fetching jobs from database
+[2025-05-09 17:42:54,377] INFO in app: Retrieved all jobs from database
+[2025-05-09 17:42:54,377] INFO in app: Retrieved all jobs from database
+[2025-05-09 17:42:54,381] INFO in _internal: 127.0.0.1 - - [09/May/2025 17:42:54] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 17:45:56,055] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\cc.py', reloading
+[2025-05-09 17:45:56,727] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 17:46:00,066] INFO in app: Starting Flask application
+[2025-05-09 17:46:00,077] WARNING in _internal:  * Debugger is active!
+[2025-05-09 17:46:00,085] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 18:52:21,264] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Scripts\\pip-script.py', reloading
+[2025-05-09 18:52:22,357] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 18:52:25,701] INFO in app: Starting Flask application
+[2025-05-09 18:52:25,713] WARNING in _internal:  * Debugger is active!
+[2025-05-09 18:52:25,723] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 18:52:28,992] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\git_filter_repo.py', reloading
+[2025-05-09 18:52:28,992] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\git_filter_repo.py', reloading
+[2025-05-09 18:52:30,073] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 18:52:32,850] INFO in app: Starting Flask application
+[2025-05-09 18:52:32,860] WARNING in _internal:  * Debugger is active!
+[2025-05-09 18:52:32,868] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 18:55:25,334] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\cc.py', reloading
+[2025-05-09 18:55:26,594] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 18:55:29,344] INFO in app: Starting Flask application
+[2025-05-09 18:55:29,353] WARNING in _internal:  * Debugger is active!
+[2025-05-09 18:55:29,362] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 18:57:59,883] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 18:57:59,885] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 18:57:59,886] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 18:58:00,986] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 18:58:03,265] INFO in app: Starting Flask application
+[2025-05-09 18:58:03,277] WARNING in _internal:  * Debugger is active!
+[2025-05-09 18:58:03,288] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 18:58:43,129] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 18:58:43,130] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 18:58:43,130] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 18:58:43,576] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 18:58:46,133] INFO in app: Starting Flask application
+[2025-05-09 18:58:46,144] WARNING in _internal:  * Debugger is active!
+[2025-05-09 18:58:46,152] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 18:59:41,319] DEBUG in app: Fetching jobs from database
+[2025-05-09 18:59:41,319] DEBUG in app: Fetching jobs from database
+[2025-05-09 18:59:41,339] INFO in app: Retrieved all jobs from database
+[2025-05-09 18:59:41,339] INFO in app: Retrieved all jobs from database
+[2025-05-09 18:59:41,365] INFO in _internal: 127.0.0.1 - - [09/May/2025 18:59:41] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 18:59:41,470] INFO in _internal: 127.0.0.1 - - [09/May/2025 18:59:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 18:59:54,075] DEBUG in app: Fetching jobs from database
+[2025-05-09 18:59:54,075] DEBUG in app: Fetching jobs from database
+[2025-05-09 18:59:54,078] INFO in app: Retrieved all jobs from database
+[2025-05-09 18:59:54,078] INFO in app: Retrieved all jobs from database
+[2025-05-09 18:59:54,084] INFO in _internal: 127.0.0.1 - - [09/May/2025 18:59:54] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 18:59:54,168] INFO in _internal: 127.0.0.1 - - [09/May/2025 18:59:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 18:59:55,484] DEBUG in app: Fetching jobs from database
+[2025-05-09 18:59:55,484] DEBUG in app: Fetching jobs from database
+[2025-05-09 18:59:55,486] INFO in app: Retrieved all jobs from database
+[2025-05-09 18:59:55,486] INFO in app: Retrieved all jobs from database
+[2025-05-09 18:59:55,490] INFO in _internal: 127.0.0.1 - - [09/May/2025 18:59:55] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 18:59:55,565] INFO in _internal: 127.0.0.1 - - [09/May/2025 18:59:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:01:32,535] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:01:32,535] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:01:32,537] INFO in app: Retrieved all jobs from database
+[2025-05-09 19:01:32,537] INFO in app: Retrieved all jobs from database
+[2025-05-09 19:01:32,581] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:01:32] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 19:01:32,938] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:01:32] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:03:39,547] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:03:39,548] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:03:39,548] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:03:40,027] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 19:03:43,253] INFO in app: Starting Flask application
+[2025-05-09 19:03:43,264] WARNING in _internal:  * Debugger is active!
+[2025-05-09 19:03:43,273] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 19:05:00,126] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:05:00,126] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:05:00,133] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:05:00,133] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:05:00,189] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:05:00] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 19:05:00,292] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:05:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:05:16,357] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:05:16,357] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:05:16,357] INFO in app: Sorting jobs by 'date_applied'
+[2025-05-09 19:05:16,357] INFO in app: Sorting jobs by 'date_applied'
+[2025-05-09 19:05:16,359] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:05:16,359] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:05:16,365] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:05:16] "GET /jobs?search=&sort=date_applied HTTP/1.1" 200 -
+[2025-05-09 19:05:19,271] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:05:19,271] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:05:19,272] INFO in app: Sorting jobs by 'status'
+[2025-05-09 19:05:19,272] INFO in app: Sorting jobs by 'status'
+[2025-05-09 19:05:19,274] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:05:19,274] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:05:19,279] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:05:19] "GET /jobs?search=&sort=status HTTP/1.1" 200 -
+[2025-05-09 19:08:47,013] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:08:47,013] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:08:47,013] INFO in app: Sorting jobs by 'status'
+[2025-05-09 19:08:47,013] INFO in app: Sorting jobs by 'status'
+[2025-05-09 19:08:47,016] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:08:47,016] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:08:47,085] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:08:47] "GET /jobs?search=&sort=status HTTP/1.1" 200 -
+[2025-05-09 19:08:47,241] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:08:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:08:50,639] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:08:50,639] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:08:50,640] INFO in app: Sorting jobs by 'status'
+[2025-05-09 19:08:50,640] INFO in app: Sorting jobs by 'status'
+[2025-05-09 19:08:50,641] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:08:50,641] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:08:50,645] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:08:50] "GET /jobs?search=&sort=status HTTP/1.1" 200 -
+[2025-05-09 19:08:52,844] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:08:52,844] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:08:52,844] INFO in app: Sorting jobs by 'status'
+[2025-05-09 19:08:52,844] INFO in app: Sorting jobs by 'status'
+[2025-05-09 19:08:52,846] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:08:52,846] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:08:52,852] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:08:52] "GET /jobs?search=&sort=status HTTP/1.1" 200 -
+[2025-05-09 19:09:01,190] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:09:01,190] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:09:01,190] INFO in app: Sorting jobs by 'date_applied'
+[2025-05-09 19:09:01,190] INFO in app: Sorting jobs by 'date_applied'
+[2025-05-09 19:09:01,192] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:09:01,192] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:09:01,196] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:09:01] "GET /jobs?search=&sort=date_applied HTTP/1.1" 200 -
+[2025-05-09 19:09:01,249] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:09:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:09:02,472] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:09:02,472] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:09:02,472] INFO in app: Sorting jobs by 'date_applied'
+[2025-05-09 19:09:02,472] INFO in app: Sorting jobs by 'date_applied'
+[2025-05-09 19:09:02,475] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:09:02,475] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:09:02,479] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:09:02] "GET /jobs?search=&sort=date_applied HTTP/1.1" 200 -
+[2025-05-09 19:09:03,409] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:09:03,409] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:09:03,409] INFO in app: Sorting jobs by 'date_applied'
+[2025-05-09 19:09:03,409] INFO in app: Sorting jobs by 'date_applied'
+[2025-05-09 19:09:03,410] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:09:03,410] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:09:03,414] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:09:03] "GET /jobs?search=&sort=date_applied HTTP/1.1" 200 -
+[2025-05-09 19:10:24,205] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:10:24,206] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:10:25,313] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 19:10:27,839] INFO in app: Starting Flask application
+[2025-05-09 19:10:27,848] WARNING in _internal:  * Debugger is active!
+[2025-05-09 19:10:27,856] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 19:11:46,329] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:11:46,329] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:11:46,331] INFO in app: Sorting jobs by 'date_applied' asc
+[2025-05-09 19:11:46,331] INFO in app: Sorting jobs by 'date_applied' asc
+[2025-05-09 19:11:46,335] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:11:46,335] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:11:46,419] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:11:46] "GET /jobs?search=&sort=date_applied HTTP/1.1" 200 -
+[2025-05-09 19:11:46,552] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:11:46] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:11:49,415] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:11:49,415] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:11:49,416] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:11:49,416] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:11:49,418] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:11:49,418] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:11:49,423] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:11:49] "GET /jobs?search=&sort=date_applied&direction=desc HTTP/1.1" 200 -
+[2025-05-09 19:12:21,978] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:12:21,978] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:12:21,978] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:12:21,978] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:12:21,980] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:12:21,980] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:12:21,984] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:12:21] "GET /jobs?search=&sort=status&direction=asc HTTP/1.1" 200 -
+[2025-05-09 19:12:24,344] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:12:24,344] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:12:24,344] INFO in app: Sorting jobs by 'status' desc
+[2025-05-09 19:12:24,344] INFO in app: Sorting jobs by 'status' desc
+[2025-05-09 19:12:24,346] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:12:24,346] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:12:24,351] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:12:24] "GET /jobs?search=&sort=status&direction=desc HTTP/1.1" 200 -
+[2025-05-09 19:12:44,593] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:12:44,593] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:12:44,593] INFO in app: Sorting jobs by 'date_applied' asc
+[2025-05-09 19:12:44,593] INFO in app: Sorting jobs by 'date_applied' asc
+[2025-05-09 19:12:44,595] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:12:44,595] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:12:44,599] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:12:44] "GET /jobs?search=&sort=date_applied&direction=asc HTTP/1.1" 200 -
+[2025-05-09 19:12:46,151] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:12:46,151] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:12:46,152] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:12:46,152] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:12:46,154] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:12:46,154] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:12:46,158] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:12:46] "GET /jobs?search=&sort=date_applied&direction=desc HTTP/1.1" 200 -
+[2025-05-09 19:14:26,780] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\pandas\\__init__.py', reloading
+[2025-05-09 19:14:27,579] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 19:14:30,020] INFO in app: Starting Flask application
+[2025-05-09 19:14:30,029] WARNING in _internal:  * Debugger is active!
+[2025-05-09 19:14:30,038] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 19:14:31,045] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:14:31] "GET /download?search= HTTP/1.1" 200 -
+[2025-05-09 19:16:11,259] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:16:11,261] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:16:12,532] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 19:16:15,173] INFO in app: Starting Flask application
+[2025-05-09 19:17:15,572] INFO in app: Starting Flask application
+[2025-05-09 19:19:33,494] INFO in app: Starting Flask application
+[2025-05-09 19:19:33,511] INFO in app: Converted Excel serial dates to ISO strings in database
+[2025-05-09 19:19:33,511] INFO in app: Converted Excel serial dates to ISO strings in database
+[2025-05-09 19:19:33,531] INFO in _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.139:5000
+[2025-05-09 19:19:33,531] INFO in _internal: [33mPress CTRL+C to quit[0m
+[2025-05-09 19:19:33,540] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 19:19:35,902] INFO in app: Starting Flask application
+[2025-05-09 19:19:35,915] WARNING in _internal:  * Debugger is active!
+[2025-05-09 19:19:35,924] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 19:19:37,089] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:19:37,089] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:19:37,089] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:19:37,089] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:19:37,092] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:19:37,092] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:19:37,120] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:19:37] "GET /jobs?search=&sort=date_applied&direction=desc HTTP/1.1" 200 -
+[2025-05-09 19:19:37,261] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:19:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:19:39,748] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:19:39,748] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:19:39,748] INFO in app: Sorting jobs by 'date_applied' asc
+[2025-05-09 19:19:39,748] INFO in app: Sorting jobs by 'date_applied' asc
+[2025-05-09 19:19:39,750] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:19:39,750] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:19:39,754] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:19:39] "GET /jobs?search=&sort=date_applied&direction=asc HTTP/1.1" 200 -
+[2025-05-09 19:19:40,728] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:19:40,728] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:19:40,728] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:19:40,728] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:19:40,730] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:19:40,730] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:19:40,734] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:19:40] "GET /jobs?search=&sort=date_applied&direction=desc HTTP/1.1" 200 -
+[2025-05-09 19:22:43,125] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:22:43,126] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:22:43,616] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 19:22:46,248] INFO in app: Starting Flask application
+[2025-05-09 19:22:46,261] WARNING in _internal:  * Debugger is active!
+[2025-05-09 19:22:46,270] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 19:23:15,095] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:23:15,097] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 19:23:15,616] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 19:23:18,248] INFO in app: Starting Flask application
+[2025-05-09 19:23:18,263] WARNING in _internal:  * Debugger is active!
+[2025-05-09 19:23:18,271] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 19:25:02,119] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:02,119] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:02,120] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:25:02,120] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:25:02,123] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:25:02,123] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:25:02,185] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:25:02] "GET /jobs?search=&sort=date_applied&direction=desc HTTP/1.1" 200 -
+[2025-05-09 19:25:02,307] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:25:02] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:25:05,343] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:05,343] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:05,344] INFO in app: Filtering jobs by status 'Rejected'
+[2025-05-09 19:25:05,344] INFO in app: Filtering jobs by status 'Rejected'
+[2025-05-09 19:25:05,344] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:25:05,344] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:25:05,345] INFO in app: Retrieved 14 jobs
+[2025-05-09 19:25:05,345] INFO in app: Retrieved 14 jobs
+[2025-05-09 19:25:05,348] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:25:05] "GET /jobs?search=&sort=date_applied&direction=desc&status_filter=Rejected HTTP/1.1" 200 -
+[2025-05-09 19:25:10,696] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:10,696] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:10,696] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:25:10,696] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:25:10,696] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:25:10,696] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:25:10,697] INFO in app: Retrieved 2 jobs
+[2025-05-09 19:25:10,697] INFO in app: Retrieved 2 jobs
+[2025-05-09 19:25:10,700] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:25:10] "GET /jobs?search=&sort=date_applied&direction=desc&status_filter=Interviewing HTTP/1.1" 200 -
+[2025-05-09 19:25:14,103] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:14,103] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:14,103] INFO in app: Filtering jobs by status 'Applied'
+[2025-05-09 19:25:14,103] INFO in app: Filtering jobs by status 'Applied'
+[2025-05-09 19:25:14,103] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:25:14,103] INFO in app: Sorting jobs by 'date_applied' desc
+[2025-05-09 19:25:14,105] INFO in app: Retrieved 116 jobs
+[2025-05-09 19:25:14,105] INFO in app: Retrieved 116 jobs
+[2025-05-09 19:25:14,108] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:25:14] "GET /jobs?search=&sort=date_applied&direction=desc&status_filter=Applied HTTP/1.1" 200 -
+[2025-05-09 19:25:19,209] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:19,209] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:19,211] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:25:19,211] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:25:19,215] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:25:19] "GET /jobs?search= HTTP/1.1" 200 -
+[2025-05-09 19:25:27,769] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:27,769] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:25:27,769] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:25:27,769] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:25:27,770] INFO in app: Retrieved 2 jobs
+[2025-05-09 19:25:27,770] INFO in app: Retrieved 2 jobs
+[2025-05-09 19:25:27,772] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:25:27] "GET /jobs?search=&sort=&direction=asc&status_filter=Interviewing HTTP/1.1" 200 -
+[2025-05-09 19:26:00,387] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:00,387] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:00,389] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:26:00,389] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:26:00,393] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:00] "GET /jobs?search= HTTP/1.1" 200 -
+[2025-05-09 19:26:00,442] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:26:04,506] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:04,506] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:04,506] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:04,506] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:04,511] INFO in app: Retrieved 2 jobs
+[2025-05-09 19:26:04,511] INFO in app: Retrieved 2 jobs
+[2025-05-09 19:26:04,514] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:04] "GET /jobs?search=infosys HTTP/1.1" 200 -
+[2025-05-09 19:26:25,077] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:25,077] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:25,077] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:25,077] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:25,078] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:26:25,078] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:26:25,079] INFO in app: Retrieved 0 jobs
+[2025-05-09 19:26:25,079] INFO in app: Retrieved 0 jobs
+[2025-05-09 19:26:25,081] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:25] "GET /jobs?search=infosys&sort=&direction=asc&status_filter=Interviewing HTTP/1.1" 200 -
+[2025-05-09 19:26:27,737] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:27,737] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:27,738] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:27,738] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:27,738] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:26:27,738] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:26:27,739] INFO in app: Retrieved 0 jobs
+[2025-05-09 19:26:27,739] INFO in app: Retrieved 0 jobs
+[2025-05-09 19:26:27,740] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:27] "GET /jobs?search=infosys&sort=&direction=asc&status_filter=Interviewing HTTP/1.1" 200 -
+[2025-05-09 19:26:30,111] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:30,111] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:30,112] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:30,112] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:30,113] INFO in app: Retrieved 2 jobs
+[2025-05-09 19:26:30,113] INFO in app: Retrieved 2 jobs
+[2025-05-09 19:26:30,115] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:30] "GET /jobs?search=infosys HTTP/1.1" 200 -
+[2025-05-09 19:26:34,116] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:34,116] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:34,116] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:34,116] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:34,117] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:26:34,117] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:26:34,118] INFO in app: Retrieved 0 jobs
+[2025-05-09 19:26:34,118] INFO in app: Retrieved 0 jobs
+[2025-05-09 19:26:34,120] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:34] "GET /jobs?search=infosys&sort=&direction=asc&status_filter=Interviewing HTTP/1.1" 200 -
+[2025-05-09 19:26:39,904] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:39,904] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:39,904] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:39,904] INFO in app: Filtering jobs with search 'infosys'
+[2025-05-09 19:26:39,904] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:26:39,904] INFO in app: Filtering jobs by status 'Interviewing'
+[2025-05-09 19:26:39,905] INFO in app: Retrieved 0 jobs
+[2025-05-09 19:26:39,905] INFO in app: Retrieved 0 jobs
+[2025-05-09 19:26:39,907] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:39] "GET /jobs?search=infosys&sort=&direction=asc&status_filter=Interviewing HTTP/1.1" 200 -
+[2025-05-09 19:26:43,157] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:43,157] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:43,159] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:26:43,159] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:26:43,163] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:43] "GET /jobs?search=+ HTTP/1.1" 200 -
+[2025-05-09 19:26:47,155] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:47,155] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:26:47,156] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:26:47,156] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:26:47,158] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:26:47,158] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:26:47,162] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:47] "GET /jobs?search=&sort=status&direction=asc HTTP/1.1" 200 -
+[2025-05-09 19:26:53,175] INFO in app: Accessing job for edit
+[2025-05-09 19:26:53,175] INFO in app: Accessing job for edit
+[2025-05-09 19:26:53,179] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:53] "GET /edit_job/5 HTTP/1.1" 200 -
+[2025-05-09 19:26:58,195] INFO in app: Accessing job for edit
+[2025-05-09 19:26:58,195] INFO in app: Accessing job for edit
+[2025-05-09 19:26:58,200] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:26:58] "GET /edit_job/1 HTTP/1.1" 200 -
+[2025-05-09 19:27:03,930] INFO in app: Accessing job for edit
+[2025-05-09 19:27:03,930] INFO in app: Accessing job for edit
+[2025-05-09 19:27:03,935] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:27:03] "GET /edit_job/1 HTTP/1.1" 200 -
+[2025-05-09 19:27:03,990] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:27:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:27:05,179] INFO in app: Accessing job for edit
+[2025-05-09 19:27:05,179] INFO in app: Accessing job for edit
+[2025-05-09 19:27:05,185] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:27:05] "GET /edit_job/1 HTTP/1.1" 200 -
+[2025-05-09 19:27:06,097] INFO in app: Accessing job for edit
+[2025-05-09 19:27:06,097] INFO in app: Accessing job for edit
+[2025-05-09 19:27:06,103] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:27:06] "GET /edit_job/1 HTTP/1.1" 200 -
+[2025-05-09 19:27:07,225] INFO in app: Accessing job for edit
+[2025-05-09 19:27:07,225] INFO in app: Accessing job for edit
+[2025-05-09 19:27:07,230] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:27:07] "GET /edit_job/2 HTTP/1.1" 200 -
+[2025-05-09 19:27:08,573] INFO in app: Accessing job for edit
+[2025-05-09 19:27:08,573] INFO in app: Accessing job for edit
+[2025-05-09 19:27:08,578] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:27:08] "GET /edit_job/3 HTTP/1.1" 200 -
+[2025-05-09 19:27:13,424] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:27:13,424] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:27:13,426] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:27:13,426] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:27:13,430] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:27:13] "GET /jobs?search= HTTP/1.1" 200 -
+[2025-05-09 19:27:15,565] INFO in app: Accessing job for edit
+[2025-05-09 19:27:15,565] INFO in app: Accessing job for edit
+[2025-05-09 19:27:15,569] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:27:15] "GET /edit_job/1 HTTP/1.1" 200 -
+[2025-05-09 19:27:17,279] INFO in app: Accessing job for edit
+[2025-05-09 19:27:17,279] INFO in app: Accessing job for edit
+[2025-05-09 19:27:17,285] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:27:17] "GET /edit_job/1 HTTP/1.1" 200 -
+[2025-05-09 19:30:18,503] INFO in app: Accessing job for edit
+[2025-05-09 19:30:18,503] INFO in app: Accessing job for edit
+[2025-05-09 19:30:18,540] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:18] "GET /edit_job/1 HTTP/1.1" 200 -
+[2025-05-09 19:30:18,662] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:30:24,347] INFO in app: Accessing job for edit
+[2025-05-09 19:30:24,347] INFO in app: Accessing job for edit
+[2025-05-09 19:30:24,399] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:24] "GET /edit_job/1 HTTP/1.1" 200 -
+[2025-05-09 19:30:24,434] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-09 19:30:30,835] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:30:30,835] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:30:30,836] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:30:30,836] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:30:30,839] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:30:30,839] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:30:30,844] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:30] "GET /jobs?search=&sort=status&direction=asc HTTP/1.1" 200 -
+[2025-05-09 19:30:33,631] INFO in app: Accessing job for edit
+[2025-05-09 19:30:33,631] INFO in app: Accessing job for edit
+[2025-05-09 19:30:33,638] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:33] "GET /edit_job/5 HTTP/1.1" 200 -
+[2025-05-09 19:30:47,811] INFO in app: Accessing job for edit
+[2025-05-09 19:30:47,811] INFO in app: Accessing job for edit
+[2025-05-09 19:30:47,813] INFO in app: Updating job details
+[2025-05-09 19:30:47,813] INFO in app: Updating job details
+[2025-05-09 19:30:47,820] INFO in app: Successfully updated job
+[2025-05-09 19:30:47,820] INFO in app: Successfully updated job
+[2025-05-09 19:30:47,820] DEBUG in app: Generating interview plan
+[2025-05-09 19:30:47,820] DEBUG in app: Generating interview plan
+[2025-05-09 19:30:47,822] DEBUG in _config: load_ssl_context verify=True cert=None trust_env=True http2=False
+[2025-05-09 19:30:47,838] DEBUG in _config: load_verify_locations cafile='B:\\Coding\\Anaconda\\Lib\\site-packages\\certifi\\cacert.pem'
+[2025-05-09 19:30:48,194] DEBUG in _base_client: Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': 'Create an interview plan for the following job description. Highlight key skills and requirements:\nDefault job description for testing purposes.'}], 'model': 'gpt-4o-mini', 'max_tokens': 150}}
+[2025-05-09 19:30:48,228] DEBUG in _base_client: Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+[2025-05-09 19:30:48,228] DEBUG in _trace: connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+[2025-05-09 19:30:48,273] DEBUG in _trace: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000025DDB154B00>
+[2025-05-09 19:30:48,273] DEBUG in _trace: start_tls.started ssl_context=<ssl.SSLContext object at 0x0000025DDB1058D0> server_hostname='api.openai.com' timeout=5.0
+[2025-05-09 19:30:48,297] DEBUG in _trace: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000025DDB0C2F00>
+[2025-05-09 19:30:48,297] DEBUG in _trace: send_request_headers.started request=<Request [b'POST']>
+[2025-05-09 19:30:48,297] DEBUG in _trace: send_request_headers.complete
+[2025-05-09 19:30:48,297] DEBUG in _trace: send_request_body.started request=<Request [b'POST']>
+[2025-05-09 19:30:48,298] DEBUG in _trace: send_request_body.complete
+[2025-05-09 19:30:48,298] DEBUG in _trace: receive_response_headers.started request=<Request [b'POST']>
+[2025-05-09 19:30:52,046] DEBUG in _trace: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 09 May 2025 23:30:51 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-mwprn5iskoaiyvegsjc2bqy0'), (b'openai-processing-ms', b'3064'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'3070'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'2000000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'1999953'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_6615770569c369a7c25cb28cd621d18b'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=ZCOQ8tl2LhhXTOfqLj7JGhijqf1D6AYJljLlXFKCIzM-1746833451-1.0.1.1-gGfmXehPaTW7GOMbKEic3a3rcOd9Gd1HWcrtG82ghMOQt7wNY8d9nVa1z_gM9q1KYfmwhj6q2uC4egjhqxEX4BL4Bs_wTxgI_TxkGSst_7Q; path=/; expires=Sat, 10-May-25 00:00:51 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=0UjuaQXkDbAqj1OatA0Qh_g4IDWcpPMsCnOWa.3jzI4-1746833451165-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'93d4fc967effd707-IAD'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+[2025-05-09 19:30:52,047] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-05-09 19:30:52,048] DEBUG in _trace: receive_response_body.started request=<Request [b'POST']>
+[2025-05-09 19:30:52,050] DEBUG in _trace: receive_response_body.complete
+[2025-05-09 19:30:52,050] DEBUG in _trace: response_closed.started
+[2025-05-09 19:30:52,050] DEBUG in _trace: response_closed.complete
+[2025-05-09 19:30:52,050] DEBUG in _base_client: HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Fri, 09 May 2025 23:30:51 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'user-mwprn5iskoaiyvegsjc2bqy0'), ('openai-processing-ms', '3064'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '3070'), ('x-ratelimit-limit-requests', '5000'), ('x-ratelimit-limit-tokens', '2000000'), ('x-ratelimit-remaining-requests', '4999'), ('x-ratelimit-remaining-tokens', '1999953'), ('x-ratelimit-reset-requests', '12ms'), ('x-ratelimit-reset-tokens', '1ms'), ('x-request-id', 'req_6615770569c369a7c25cb28cd621d18b'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=ZCOQ8tl2LhhXTOfqLj7JGhijqf1D6AYJljLlXFKCIzM-1746833451-1.0.1.1-gGfmXehPaTW7GOMbKEic3a3rcOd9Gd1HWcrtG82ghMOQt7wNY8d9nVa1z_gM9q1KYfmwhj6q2uC4egjhqxEX4BL4Bs_wTxgI_TxkGSst_7Q; path=/; expires=Sat, 10-May-25 00:00:51 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=0UjuaQXkDbAqj1OatA0Qh_g4IDWcpPMsCnOWa.3jzI4-1746833451165-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '93d4fc967effd707-IAD'), ('content-encoding', 'br'), ('alt-svc', 'h3=":443"; ma=86400')])
+[2025-05-09 19:30:52,050] DEBUG in _base_client: request_id: req_6615770569c369a7c25cb28cd621d18b
+[2025-05-09 19:30:52,062] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:52] "[32mPOST /edit_job/5 HTTP/1.1[0m" 302 -
+[2025-05-09 19:30:52,070] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:30:52,070] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:30:52,073] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:30:52,073] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:30:52,077] DEBUG in _trace: close.started
+[2025-05-09 19:30:52,077] DEBUG in _trace: close.complete
+[2025-05-09 19:30:52,079] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:52] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 19:30:55,262] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:30:55,262] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:30:55,262] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:30:55,262] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:30:55,315] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:30:55,315] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:30:55,320] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:55] "GET /jobs?search=&sort=status&direction=asc HTTP/1.1" 200 -
+[2025-05-09 19:30:59,605] INFO in app: Accessing job for edit
+[2025-05-09 19:30:59,605] INFO in app: Accessing job for edit
+[2025-05-09 19:30:59,610] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:30:59] "GET /edit_job/58 HTTP/1.1" 200 -
+[2025-05-09 19:31:03,513] INFO in app: Accessing job for edit
+[2025-05-09 19:31:03,513] INFO in app: Accessing job for edit
+[2025-05-09 19:31:03,513] INFO in app: Updating job details
+[2025-05-09 19:31:03,513] INFO in app: Updating job details
+[2025-05-09 19:31:03,520] INFO in app: Successfully updated job
+[2025-05-09 19:31:03,520] INFO in app: Successfully updated job
+[2025-05-09 19:31:03,520] DEBUG in app: Generating interview plan
+[2025-05-09 19:31:03,520] DEBUG in app: Generating interview plan
+[2025-05-09 19:31:03,522] DEBUG in _config: load_ssl_context verify=True cert=None trust_env=True http2=False
+[2025-05-09 19:31:03,523] DEBUG in _config: load_verify_locations cafile='B:\\Coding\\Anaconda\\Lib\\site-packages\\certifi\\cacert.pem'
+[2025-05-09 19:31:03,868] DEBUG in _base_client: Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'system', 'content': 'You are a helpful assistant.'}, {'role': 'user', 'content': 'Create an interview plan for the following job description. Highlight key skills and requirements:\nDefault job description for testing purposes.'}], 'model': 'gpt-4o-mini', 'max_tokens': 150}}
+[2025-05-09 19:31:03,868] DEBUG in _base_client: Sending HTTP Request: POST https://api.openai.com/v1/chat/completions
+[2025-05-09 19:31:03,868] DEBUG in _trace: connect_tcp.started host='api.openai.com' port=443 local_address=None timeout=5.0 socket_options=None
+[2025-05-09 19:31:03,901] DEBUG in _trace: connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000025DDB114EC0>
+[2025-05-09 19:31:03,901] DEBUG in _trace: start_tls.started ssl_context=<ssl.SSLContext object at 0x0000025DDB243150> server_hostname='api.openai.com' timeout=5.0
+[2025-05-09 19:31:03,915] DEBUG in _trace: start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000025DDB116E70>
+[2025-05-09 19:31:03,915] DEBUG in _trace: send_request_headers.started request=<Request [b'POST']>
+[2025-05-09 19:31:03,915] DEBUG in _trace: send_request_headers.complete
+[2025-05-09 19:31:03,915] DEBUG in _trace: send_request_body.started request=<Request [b'POST']>
+[2025-05-09 19:31:03,915] DEBUG in _trace: send_request_body.complete
+[2025-05-09 19:31:03,916] DEBUG in _trace: receive_response_headers.started request=<Request [b'POST']>
+[2025-05-09 19:31:06,722] DEBUG in _trace: receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Fri, 09 May 2025 23:31:05 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'access-control-expose-headers', b'X-Request-ID'), (b'openai-organization', b'user-mwprn5iskoaiyvegsjc2bqy0'), (b'openai-processing-ms', b'2749'), (b'openai-version', b'2020-10-01'), (b'x-envoy-upstream-service-time', b'2753'), (b'x-ratelimit-limit-requests', b'5000'), (b'x-ratelimit-limit-tokens', b'2000000'), (b'x-ratelimit-remaining-requests', b'4999'), (b'x-ratelimit-remaining-tokens', b'1999954'), (b'x-ratelimit-reset-requests', b'12ms'), (b'x-ratelimit-reset-tokens', b'1ms'), (b'x-request-id', b'req_64b05cc322f73e5de0f83b98a87a9321'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'cf-cache-status', b'DYNAMIC'), (b'Set-Cookie', b'__cf_bm=wGEeqBgMsn6QUgp8G3ncrtQACkQhlTh.D092l160yBQ-1746833465-1.0.1.1-kaqX4plRuLUXeUj9rHuEojSn5qIGz4V9EEK9n6w738dmx2MJ2wXGAqjXax6apkEAE4YSEezyw7UPw4X1u6lC44QQv7nztIiM4orsNlGIcCo; path=/; expires=Sat, 10-May-25 00:01:05 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'X-Content-Type-Options', b'nosniff'), (b'Set-Cookie', b'_cfuvid=.JS2DVoqVE90cfYGbpUq0FkHD2Fsb.VBHspLCM2utow-1746833465845-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), (b'Server', b'cloudflare'), (b'CF-RAY', b'93d4fcf80e4d8be3-IAD'), (b'Content-Encoding', b'br'), (b'alt-svc', b'h3=":443"; ma=86400')])
+[2025-05-09 19:31:06,722] INFO in _client: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+[2025-05-09 19:31:06,722] DEBUG in _trace: receive_response_body.started request=<Request [b'POST']>
+[2025-05-09 19:31:06,723] DEBUG in _trace: receive_response_body.complete
+[2025-05-09 19:31:06,723] DEBUG in _trace: response_closed.started
+[2025-05-09 19:31:06,723] DEBUG in _trace: response_closed.complete
+[2025-05-09 19:31:06,723] DEBUG in _base_client: HTTP Response: POST https://api.openai.com/v1/chat/completions "200 OK" Headers([('date', 'Fri, 09 May 2025 23:31:05 GMT'), ('content-type', 'application/json'), ('transfer-encoding', 'chunked'), ('connection', 'keep-alive'), ('access-control-expose-headers', 'X-Request-ID'), ('openai-organization', 'user-mwprn5iskoaiyvegsjc2bqy0'), ('openai-processing-ms', '2749'), ('openai-version', '2020-10-01'), ('x-envoy-upstream-service-time', '2753'), ('x-ratelimit-limit-requests', '5000'), ('x-ratelimit-limit-tokens', '2000000'), ('x-ratelimit-remaining-requests', '4999'), ('x-ratelimit-remaining-tokens', '1999954'), ('x-ratelimit-reset-requests', '12ms'), ('x-ratelimit-reset-tokens', '1ms'), ('x-request-id', 'req_64b05cc322f73e5de0f83b98a87a9321'), ('strict-transport-security', 'max-age=31536000; includeSubDomains; preload'), ('cf-cache-status', 'DYNAMIC'), ('set-cookie', '__cf_bm=wGEeqBgMsn6QUgp8G3ncrtQACkQhlTh.D092l160yBQ-1746833465-1.0.1.1-kaqX4plRuLUXeUj9rHuEojSn5qIGz4V9EEK9n6w738dmx2MJ2wXGAqjXax6apkEAE4YSEezyw7UPw4X1u6lC44QQv7nztIiM4orsNlGIcCo; path=/; expires=Sat, 10-May-25 00:01:05 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('x-content-type-options', 'nosniff'), ('set-cookie', '_cfuvid=.JS2DVoqVE90cfYGbpUq0FkHD2Fsb.VBHspLCM2utow-1746833465845-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None'), ('server', 'cloudflare'), ('cf-ray', '93d4fcf80e4d8be3-IAD'), ('content-encoding', 'br'), ('alt-svc', 'h3=":443"; ma=86400')])
+[2025-05-09 19:31:06,723] DEBUG in _base_client: request_id: req_64b05cc322f73e5de0f83b98a87a9321
+[2025-05-09 19:31:06,724] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:31:06] "[32mPOST /edit_job/58 HTTP/1.1[0m" 302 -
+[2025-05-09 19:31:06,730] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:31:06,730] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:31:06,732] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:31:06,732] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:31:06,737] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:31:06] "GET /jobs HTTP/1.1" 200 -
+[2025-05-09 19:31:13,254] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:31:13,254] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:31:13,254] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:31:13,254] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:31:13,256] DEBUG in _trace: close.started
+[2025-05-09 19:31:13,256] DEBUG in _trace: close.complete
+[2025-05-09 19:31:13,258] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:31:13,258] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:31:13,263] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:31:13] "GET /jobs?search=&sort=status&direction=asc HTTP/1.1" 200 -
+[2025-05-09 19:31:14,943] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:31:14,943] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:31:14,943] INFO in app: Sorting jobs by 'status' desc
+[2025-05-09 19:31:14,943] INFO in app: Sorting jobs by 'status' desc
+[2025-05-09 19:31:14,946] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:31:14,946] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:31:14,950] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:31:14] "GET /jobs?search=&sort=status&direction=desc HTTP/1.1" 200 -
+[2025-05-09 19:31:16,280] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:31:16,280] DEBUG in app: Fetching jobs from database
+[2025-05-09 19:31:16,280] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:31:16,280] INFO in app: Sorting jobs by 'status' asc
+[2025-05-09 19:31:16,281] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:31:16,281] INFO in app: Retrieved 139 jobs
+[2025-05-09 19:31:16,286] INFO in _internal: 127.0.0.1 - - [09/May/2025 19:31:16] "GET /jobs?search=&sort=status&direction=asc HTTP/1.1" 200 -
+[2025-05-09 20:23:33,810] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 20:23:35,093] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 20:23:42,326] INFO in app: Starting Flask application
+[2025-05-09 20:23:42,341] WARNING in _internal:  * Debugger is active!
+[2025-05-09 20:23:42,350] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 21:23:36,628] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 21:23:37,144] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 21:23:39,765] INFO in app: Starting Flask application
+[2025-05-09 21:23:39,782] WARNING in _internal:  * Debugger is active!
+[2025-05-09 21:23:39,792] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 22:23:39,526] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 22:23:40,519] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 22:23:43,144] INFO in app: Starting Flask application
+[2025-05-09 22:23:43,160] WARNING in _internal:  * Debugger is active!
+[2025-05-09 22:23:43,168] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-09 23:23:42,310] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-09 23:23:42,798] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-09 23:23:45,390] INFO in app: Starting Flask application
+[2025-05-09 23:23:45,407] WARNING in _internal:  * Debugger is active!
+[2025-05-09 23:23:45,414] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 00:23:44,982] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-10 00:23:46,106] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 00:23:48,859] INFO in app: Starting Flask application
+[2025-05-10 00:23:48,873] WARNING in _internal:  * Debugger is active!
+[2025-05-10 00:23:48,881] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 01:23:47,750] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-10 01:23:48,604] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 01:23:55,525] INFO in app: Starting Flask application
+[2025-05-10 01:23:55,542] WARNING in _internal:  * Debugger is active!
+[2025-05-10 01:23:55,550] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 02:23:50,440] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-10 02:23:51,240] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 02:23:53,843] INFO in app: Starting Flask application
+[2025-05-10 02:23:53,858] WARNING in _internal:  * Debugger is active!
+[2025-05-10 02:23:53,865] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 03:23:53,282] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-10 03:23:54,554] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 03:23:57,199] INFO in app: Starting Flask application
+[2025-05-10 03:23:57,215] WARNING in _internal:  * Debugger is active!
+[2025-05-10 03:23:57,224] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 04:23:56,085] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-10 04:23:56,929] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 04:24:03,367] INFO in app: Starting Flask application
+[2025-05-10 04:24:03,384] WARNING in _internal:  * Debugger is active!
+[2025-05-10 04:24:03,392] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 05:23:58,790] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-10 05:23:59,106] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 05:24:01,755] INFO in app: Starting Flask application
+[2025-05-10 05:24:01,770] WARNING in _internal:  * Debugger is active!
+[2025-05-10 05:24:01,777] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 06:24:02,062] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-10 06:24:02,501] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 06:24:05,141] INFO in app: Starting Flask application
+[2025-05-10 06:24:05,157] WARNING in _internal:  * Debugger is active!
+[2025-05-10 06:24:05,165] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 07:24:04,352] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-10 07:24:04,927] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 07:24:07,566] INFO in app: Starting Flask application
+[2025-05-10 07:24:07,581] WARNING in _internal:  * Debugger is active!
+[2025-05-10 07:24:07,588] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 08:24:07,157] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\app.py', reloading
+[2025-05-10 08:24:08,227] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 08:24:10,805] INFO in app: Starting Flask application
+[2025-05-10 08:24:10,820] WARNING in _internal:  * Debugger is active!
+[2025-05-10 08:24:10,828] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 08:34:59,998] INFO in _internal:  * Detected change in 'B:\\coding\\MCP\\MCP2.0\\CareerCrafter\\cc.py', reloading
+[2025-05-10 08:35:00,447] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 08:35:03,146] INFO in app: Starting Flask application
+[2025-05-10 08:35:03,160] WARNING in _internal:  * Debugger is active!
+[2025-05-10 08:35:03,169] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 08:37:28,858] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:37:28,858] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:37:28,859] INFO in app: Sorting jobs by 'status' asc
+[2025-05-10 08:37:28,859] INFO in app: Sorting jobs by 'status' asc
+[2025-05-10 08:37:28,864] INFO in app: Retrieved 139 jobs
+[2025-05-10 08:37:28,864] INFO in app: Retrieved 139 jobs
+[2025-05-10 08:37:28,910] INFO in _internal: 127.0.0.1 - - [10/May/2025 08:37:28] "GET /jobs?search=&sort=status&direction=asc HTTP/1.1" 200 -
+[2025-05-10 08:39:18,889] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:39:18,889] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:39:18,890] INFO in app: Sorting jobs by 'status' asc
+[2025-05-10 08:39:18,890] INFO in app: Sorting jobs by 'status' asc
+[2025-05-10 08:39:18,892] INFO in app: Retrieved 139 jobs
+[2025-05-10 08:39:18,892] INFO in app: Retrieved 139 jobs
+[2025-05-10 08:39:18,930] INFO in _internal: 127.0.0.1 - - [10/May/2025 08:39:18] "GET /jobs?search=&sort=status&direction=asc HTTP/1.1" 200 -
+[2025-05-10 08:39:44,372] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:39:44,372] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:39:44,373] INFO in app: Filtering jobs with search 'intervi'
+[2025-05-10 08:39:44,373] INFO in app: Filtering jobs with search 'intervi'
+[2025-05-10 08:39:44,378] INFO in app: Retrieved 2 jobs
+[2025-05-10 08:39:44,378] INFO in app: Retrieved 2 jobs
+[2025-05-10 08:39:44,412] INFO in _internal: 127.0.0.1 - - [10/May/2025 08:39:44] "GET /jobs?search=intervi HTTP/1.1" 200 -
+[2025-05-10 08:41:34,266] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:41:34,266] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:41:34,266] INFO in app: Filtering jobs with search 'intervi'
+[2025-05-10 08:41:34,266] INFO in app: Filtering jobs with search 'intervi'
+[2025-05-10 08:41:34,267] INFO in app: Retrieved 2 jobs
+[2025-05-10 08:41:34,267] INFO in app: Retrieved 2 jobs
+[2025-05-10 08:41:34,306] INFO in _internal: 127.0.0.1 - - [10/May/2025 08:41:34] "GET /jobs?search=intervi HTTP/1.1" 200 -
+[2025-05-10 08:41:34,389] INFO in _internal: 127.0.0.1 - - [10/May/2025 08:41:34] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-10 08:43:18,962] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\logging\\__init__.py', reloading
+[2025-05-10 08:43:19,010] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\logging\\handlers.py', reloading
+[2025-05-10 08:43:19,085] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\flask\\__init__.py', reloading
+[2025-05-10 08:43:19,110] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\flask\\app.py', reloading
+[2025-05-10 08:43:19,139] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\flask\\templating.py', reloading
+[2025-05-10 08:43:19,529] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 08:43:22,217] INFO in app: Starting Flask application
+[2025-05-10 08:43:22,234] WARNING in _internal:  * Debugger is active!
+[2025-05-10 08:43:22,243] INFO in _internal:  * Debugger PIN: 745-208-935
+[2025-05-10 08:44:56,761] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:44:56,761] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:44:56,762] INFO in app: Filtering jobs with search 'intervi'
+[2025-05-10 08:44:56,762] INFO in app: Filtering jobs with search 'intervi'
+[2025-05-10 08:44:56,766] INFO in app: Retrieved 2 jobs
+[2025-05-10 08:44:56,766] INFO in app: Retrieved 2 jobs
+[2025-05-10 08:44:56,814] INFO in _internal: 127.0.0.1 - - [10/May/2025 08:44:56] "GET /jobs?search=intervi HTTP/1.1" 200 -
+[2025-05-10 08:44:56,916] INFO in _internal: 127.0.0.1 - - [10/May/2025 08:44:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[2025-05-10 08:45:18,374] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:45:18,374] DEBUG in app: Fetching jobs from database
+[2025-05-10 08:45:18,376] INFO in app: Retrieved 139 jobs
+[2025-05-10 08:45:18,376] INFO in app: Retrieved 139 jobs
+[2025-05-10 08:45:18,383] INFO in _internal: 127.0.0.1 - - [10/May/2025 08:45:18] "GET /jobs?search= HTTP/1.1" 200 -
+[2025-05-10 09:21:46,106] INFO in _internal:  * Detected change in 'B:\\Coding\\Anaconda\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+[2025-05-10 09:21:46,710] INFO in _internal:  * Restarting with watchdog (windowsapi)
+[2025-05-10 09:21:49,441] INFO in app: Starting Flask application
+[2025-05-10 09:21:49,457] WARNING in _internal:  * Debugger is active!
+[2025-05-10 09:21:49,465] INFO in _internal:  * Debugger PIN: 745-208-935

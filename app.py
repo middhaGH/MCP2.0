@@ -3,15 +3,14 @@ from logging.handlers import RotatingFileHandler
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify, Response
 from flask_sqlalchemy import SQLAlchemy
 import os
-import pandas as pd
-from werkzeug.utils import secure_filename
-import openpyxl
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import or_
+import pandas as pd
 import openai, sys  # Import OpenAI library
 from dotenv import load_dotenv
 from flask_migrate import Migrate
 from openai import OpenAI
+from datetime import datetime, timedelta
 
 # Load environment variables from .env file
 load_dotenv()
@@ -35,11 +34,7 @@ app.logger.addHandler(handler)
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///jobs.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['UPLOAD_FOLDER'] = 'uploads'
 app.secret_key = 'your_secret_key_here'
-
-# Ensure the upload folder exists
-os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 db = SQLAlchemy(app)
 
@@ -63,6 +58,23 @@ class Job(db.Model):
 
 # Add logging to track application flow
 logging.info("Starting Flask application")
+
+def convert_excel_serial_dates():
+    """Convert any numeric Excel date serials in date_applied to ISO date strings."""
+    updated = False
+    for job in Job.query.all():
+        da = job.date_applied
+        if da and isinstance(da, (str,)) and da.isdigit():
+            try:
+                serial = int(da)
+                dt = datetime(1899, 12, 30) + timedelta(days=serial)
+                job.date_applied = dt.strftime('%Y-%m-%d')
+                updated = True
+            except ValueError:
+                continue
+    if updated:
+        db.session.commit()
+        app.logger.info('Converted Excel serial dates to ISO strings in database')
 
 @app.route('/')
 def index():
@@ -97,17 +109,38 @@ def jobs():
 
         app.logger.debug("Fetching jobs from database")
         search_query = request.args.get('search', '').strip()
+        sort_by = request.args.get('sort', '').strip()
+        direction = request.args.get('direction', 'asc')
+        # Read status filter from query args
+        status_filter = request.args.get('status_filter', '').strip()
+        # Build base query
+        jobs_query = Job.query
+        # Apply search filter
         if search_query:
             filter_cond = or_(
                 Job.company.ilike(f"%{search_query}%"),
                 Job.position.ilike(f"%{search_query}%"),
                 Job.status.ilike(f"%{search_query}%")
             )
-            jobs_list = Job.query.filter(filter_cond).all()
-            app.logger.info(f"Retrieved {len(jobs_list)} jobs matching search '{search_query}'", extra={'search_query': search_query})
-        else:
-            jobs_list = Job.query.all()
-            app.logger.info("Retrieved all jobs from database", extra={'job_count': len(jobs_list)})
+            jobs_query = jobs_query.filter(filter_cond)
+            app.logger.info(f"Filtering jobs with search '{search_query}'", extra={'search_query': search_query})
+        # Apply status filter
+        valid_statuses = {'Applied', 'Rejected', 'Interviewing'}
+        if status_filter in valid_statuses:
+            jobs_query = jobs_query.filter_by(status=status_filter)
+            app.logger.info(f"Filtering jobs by status '{status_filter}'", extra={'status_filter': status_filter})
+        # Apply sorting with direction
+        valid_sorts = {'position', 'date_applied', 'status'}
+        if sort_by in valid_sorts:
+            col = getattr(Job, sort_by)
+            if direction == 'desc':
+                jobs_query = jobs_query.order_by(col.desc())
+            else:
+                jobs_query = jobs_query.order_by(col.asc())
+            app.logger.info(f"Sorting jobs by '{sort_by}' {direction}", extra={'sort_by': sort_by, 'direction': direction})
+        # Execute query
+        jobs_list = jobs_query.all()
+        app.logger.info(f"Retrieved {len(jobs_list)} jobs", extra={ 'job_count': len(jobs_list), 'search_query': search_query, 'sort_by': sort_by })
         
         # Compute counts for Applied, Rejected, Interviewing
         applied_count = Job.query.filter_by(status='Applied').count()
@@ -116,14 +149,18 @@ def jobs():
         return render_template('jobs.html', jobs=jobs_list, search_query=search_query,
                                applied_count=applied_count,
                                rejected_count=rejected_count,
-                               interviewing_count=interviewing_count)
+                               interviewing_count=interviewing_count,
+                               sort_by=sort_by,
+                               direction=direction,
+                               status_filter=status_filter)
     except SQLAlchemyError as e:
         app.logger.error("Database error in jobs route", exc_info=True, extra={
             'error': str(e)
         })
         flash(f"Database error: {e}")
         return render_template('jobs.html', jobs=[], search_query='',
-                               applied_count=0, rejected_count=0, interviewing_count=0)
+                               applied_count=0, rejected_count=0, interviewing_count=0,
+                               sort_by='', direction='asc', status_filter='')
 
 @app.route('/edit_job/<int:job_id>', methods=['GET', 'POST'])
 def edit_job(job_id):
@@ -238,110 +275,6 @@ def delete_job(job_id):
         
     return redirect(url_for('jobs'))
 
-@app.route('/upload', methods=['POST'])
-def upload():
-    logging.info("Received file upload request")
-    if 'file' not in request.files:
-        logging.warning("No file part in the request")
-        flash('No file part in the request')
-        return redirect(url_for('jobs'))
-
-    file = request.files['file']
-
-    if file.filename == '':
-        logging.warning("No file selected for upload")
-        flash('No selected file')
-        return redirect(url_for('jobs'))
-
-    if file and allowed_file(file.filename):
-        filename = secure_filename(file.filename)
-        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-        file.save(filepath)
-        logging.info(f"File saved to {filepath}")
-
-        try:
-            if filename.endswith('.csv'):
-                data = pd.read_csv(filepath)
-            else:
-                data = pd.read_excel(filepath)
-
-            logging.info("Validating column headers")
-            required_columns = {'company', 'position', 'resume used', 'date applied', 'status', 'interview details', 'comments', 'link'}
-            file_columns = set(data.columns.str.strip().str.lower())
-
-            if not required_columns.issubset(file_columns):
-                missing_columns = required_columns - file_columns
-                logging.warning(f"Missing required columns: {missing_columns}")
-                flash(f"Missing required columns: {missing_columns}")
-                return redirect(url_for('jobs'))
-
-            logging.info("Normalizing column names and processing rows")
-            data.columns = data.columns.str.strip().str.lower()
-
-            # Handle column renaming and ignore unnecessary columns
-            column_mapping = {
-                'compay applied': 'company',
-                'position applied': 'position',
-                'resume used': 'resume used',
-                'date applied': 'date applied',
-                'status': 'status',
-                'interview details': 'interview details',
-                'comments': 'comments',
-                'link': 'link'
-            }
-            data.rename(columns=column_mapping, inplace=True)
-
-            # Drop unnecessary columns
-            data = data[[col for col in column_mapping.values() if col in data.columns]]
-
-            for _, row in data.iterrows():
-                new_job = Job(
-                    company=row.get('company', ''),
-                    position=row.get('position', ''),
-                    resume_used=row.get('resume used', ''),
-                    date_applied=row.get('date applied', ''),
-                    status=row.get('status', ''),
-                    interview_details=row.get('interview details', ''),
-                    comments=row.get('comments', ''),
-                    link=row.get('link', '')
-                )
-                db.session.add(new_job)
-                logging.info(f"Added job from file: {new_job}")
-
-            db.session.commit()
-            logging.info("File processed and data committed to the database")
-            flash('File uploaded and data imported successfully!')
-            return redirect(url_for('jobs'))
-        except Exception as e:
-            logging.error(f"Error processing file: {e}")
-            flash(f"Error processing file: {e}")
-
-    return redirect(url_for('jobs'))
-
-@app.route('/validate_columns', methods=['GET'])
-def validate_columns():
-    filepath = os.path.join(app.config['UPLOAD_FOLDER'], 'JobApplications.xlsx')
-
-    if not os.path.exists(filepath):
-        return "Excel file not found.", 404
-
-    # Read column names from the Excel sheet
-    workbook = openpyxl.load_workbook(filepath)
-    sheet = workbook.active
-    excel_columns = [cell.value.strip().lower() for cell in sheet[1] if cell.value]
-
-    # Define expected column names from the database
-    expected_columns = {'company', 'position', 'resume used', 'date applied', 'status', 'interview details', 'comments', 'link'}
-
-    # Compare columns
-    missing_columns = expected_columns - set(excel_columns)
-    extra_columns = set(excel_columns) - expected_columns
-
-    if missing_columns or extra_columns:
-        return f"Missing columns: {missing_columns}, Extra columns: {extra_columns}", 400
-
-    return "Column names are aligned.", 200
-
 @app.route('/api/chat', methods=['POST'])
 def api_chat():
     logging.info("[PrepMe] Received chat request")
@@ -384,7 +317,7 @@ def prepme(job_id):
     job = Job.query.get_or_404(job_id)
 
     # Load the resume from the uploads directory
-    resume_path = os.path.join(app.config['UPLOAD_FOLDER'], 'resume.docx')
+    resume_path = os.path.join('uploads', 'resume.docx')
     resume_content = ""
     if os.path.exists(resume_path):
         import docx
@@ -447,9 +380,8 @@ def download_jobs():
         headers={"Content-Disposition": "attachment;filename=jobs.csv"}
     )
 
-# Helper function to check allowed file extensions
-def allowed_file(filename):
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'csv', 'xlsx'}
-
 if __name__ == "__main__":
+    # Convert Excel serial dates before first request
+    with app.app_context():
+        convert_excel_serial_dates()
     app.run(host="0.0.0.0", port=5000, debug=True)
